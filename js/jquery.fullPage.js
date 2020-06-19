@@ -39,7 +39,7 @@
     var COMPLETELY_SEL =        '.' + COMPLETELY;
 
     // section
-    var SECTION_DEFAULT_SEL =   '.section';
+    var SECTION_DEFAULT_SEL =   '.contentSection';
     var SECTION =               'fp-section';
     var SECTION_SEL =           '.' + SECTION;
     var SECTION_ACTIVE_SEL =    SECTION_SEL + ACTIVE_SEL;
@@ -104,7 +104,7 @@
             menu: true,
             anchors:[],
             lockAnchors: false,
-            navigation: false,
+            navigation: true,
             navigationPosition: 'right',
             navigationTooltips: [],
             showActiveTooltip: false,
@@ -150,7 +150,7 @@
             controlArrows: true,
             controlArrowColor: '#000',
             verticalCentered: true,
-            sectionsColor : ['orange','yellow','gray'],
+            sectionsColor : ['#f5f5f5','#e9e9e9','#e1e1e1'],
             paddingTop: 0,
             paddingBottom: 0,
             fixedElements: null,

@@ -1,0 +1,36 @@
+/* reset */
+body{
+    margin:0;
+    padding:0;
+}
+ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
+
+/* nav */
+.mainNav div ul{
+    overflow:hidden;
+    position:fixed;
+    top:0;
+    height:80px;
+    z-index: 9999;
+}
+.mainNav div ul li{
+    float: left;
+    width: 150px;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+}
+.mainNav div ul li a{
+    display:block;
+    width:100%;
+    text-decoration: none;
+    color:#0f4c8e;
+}
+
+/* contentSection */
+.contentSection .contentSet{
+    max-width:1280px;
+    width:80%;
+    margin:0 auto;
+    background:#eee;
+}
