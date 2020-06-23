@@ -5,6 +5,10 @@ $(document).ready(function(){
     });
 });
 
+new fullpage('#mainNav', {
+	anchors: ['contentArea01', 'contentArea02', 'contentArea03'],
+	menu: '#myMenu'
+});
 // $(function(){
 //     $('body').on('click', '.page-scroll a', function(event) {
 //         var $anchor = $(this);

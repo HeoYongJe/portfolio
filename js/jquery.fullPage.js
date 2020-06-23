@@ -4,7 +4,7 @@
  * @license MIT licensed
  *
  * Copyright (C) 2015 alvarotrigo.com - A project by Alvaro Trigo
- */ 
+ */
 (function(global, factory) {
     'use strict';
     if (typeof define === 'function' && define.amd) {
@@ -87,7 +87,7 @@
 
     var $window = $(window);
     var $document = $(document);
-    
+
     $.fn.fullpage = function(options) {
         //only once my friend!
         if($('html').hasClass(ENABLED)){ displayWarnings(); return; }
@@ -102,7 +102,7 @@
         options = $.extend({
             //navigation
             menu: true,
-            anchors:['#contentArea01','#contentArea02','#contentArea03'],
+            anchors:[],
             lockAnchors: false,
             navigation: true,
             navigationPosition: 'right',
@@ -150,7 +150,7 @@
             controlArrows: true,
             controlArrowColor: '#000',
             verticalCentered: true,
-            sectionsColor : ['#f5f5f5','#e9e9e9','#e1e1e1'],
+            sectionsColor : [],
             paddingTop: 0,
             paddingBottom: 0,
             fixedElements: null,
@@ -181,7 +181,7 @@
 
             lazyLoading: true
         }, options);
-        
+
         //flag to avoid very fast sliding for landscape sliders
         var slideMoving = false;
 

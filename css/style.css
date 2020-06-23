@@ -5,10 +5,16 @@ body{
 }
 ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
 
-#fullpage{
+#contentArea01{
+    background:url(../img/mainBack03.jpg)no-repeat;
+}
+#contentArea02{
+    background:url(../img/mainBack02.png)no-repeat;
+    background:#f39531;
+}
+#contentArea03{
     background:url(../img/mainBack02.png)no-repeat;
 }
-
 /* nav */
 #mainNav div ul{
     overflow:hidden;
@@ -36,5 +42,17 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
     max-width:1280px;
     width:80%;
     margin:0 auto;
-    background:#eee;
+}
+#contentArea02 ul{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap: nowrap;
+}
+#contentArea02 ul li{
+    text-align:center;
+    width:25%;
+    height:150px;
+    background:#ccc;
+    border:1px solid #eee;
 }
