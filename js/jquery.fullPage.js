@@ -101,9 +101,9 @@
         // Creating some defaults, extending them with any options that were provided
         options = $.extend({
             //navigation
-            menu: true,
-            anchors:[],
-            lockAnchors: false,
+            menu: '#myMenu',
+		    lockAnchors: false,
+		    anchors:['contentArea01', 'contentArea02', 'contentArea03'],
             navigation: true,
             navigationPosition: 'right',
             navigationTooltips: [],
@@ -148,7 +148,7 @@
 
             //design
             controlArrows: true,
-            controlArrowColor: '#000',
+            controlArrowColor: '#fff',
             verticalCentered: true,
             sectionsColor : [],
             paddingTop: 0,
@@ -893,7 +893,7 @@
         * Determines if the URL anchor destiny is the starting section (the one using 'active' class before initialization)
         */
         function isDestinyTheStartingSection(){
-            var destinationSection = getSectionByAnchor(getAnchorsURL().section);
+            var destinationSection = getSectionByAnchor(getAnchorsURL().contentSection);
             return !destinationSection || destinationSection.length && destinationSection.index() === startingSection.index();
         }
 
@@ -1712,7 +1712,7 @@
         */
         function scrollToAnchor(){
             var anchors =  getAnchorsURL();
-            var sectionAnchor = anchors.section;
+            var sectionAnchor = anchors.contentSection;
             var slideAnchor = anchors.slide;
 
             if(sectionAnchor){  //if theres any #
@@ -1731,7 +1731,7 @@
         function hashChangeHandler(){
             if(!isScrolling && !options.lockAnchors){
                 var anchors = getAnchorsURL();
-                var sectionAnchor = anchors.section;
+                var sectionAnchor = anchors.contentSection;
                 var slideAnchor = anchors.slide;
 
                 //when moving to a slide in the first section for the first time (first time to add an anchor to the URL)
