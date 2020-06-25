@@ -5,15 +5,30 @@ body{
 }
 ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
 
-#contentArea01{
+#introPage{
     background:url(../img/mainBack05.jpg)no-repeat;
 }
-#contentArea02{
-    background:url(../img/mainBack03.jpg)no-repeat;
+#itemArea{
+    background:url(../img/mainBack06.jpg)no-repeat;
 }
-#contentArea03{
-    background:url(../img/mainBack04.jpg)no-repeat;
+#contactArea{
+    background:url(../img/mainBack07.jpg)no-repeat;
 }
+/* common */
+.contentSet h2{
+    font-size:4em;
+    padding-bottom:100px;
+    background: linear-gradient(to right, #0c4c8e, #8ca6ce);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contentSet span{
+    background: linear-gradient(to right, #0c4c8e, #8ca6ce);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align:center;
+}
+
 /* nav */
 #mainNav div ul{
     overflow:hidden;
@@ -36,29 +51,33 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
     color:#0f4c8e;
 }
 
-
 /* contentSection */
-.contentSection .contentSet{
+#introPage h2{
+    font-size:6em;
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+}
+.section .contentSet{
     max-width:1280px;
     width:80%;
     margin:0 auto;
 }
-#contentArea02 ul{
+#itemArea ul{
     display:flex;
     justify-content:space-around;
     align-items:center;
     flex-wrap: nowrap;
 }
-#contentArea02 ul li{
+#itemArea ul li{
     text-align:center;
     width:25%;
     background:#fff;
     border:1px solid #eee;
 }
-#contentArea02 ul li figure{
-    height:250px;
+#itemArea ul li figure{
+    
 }
-#contentArea02 ul li a{
+#itemArea ul li a{
     width:100%;
     height:100%;
     display:block;

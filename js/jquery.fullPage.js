@@ -39,7 +39,7 @@
     var COMPLETELY_SEL =        '.' + COMPLETELY;
 
     // section
-    var SECTION_DEFAULT_SEL =   '.contentSection';
+    var SECTION_DEFAULT_SEL =   '.section';
     var SECTION =               'fp-section';
     var SECTION_SEL =           '.' + SECTION;
     var SECTION_ACTIVE_SEL =    SECTION_SEL + ACTIVE_SEL;
@@ -101,9 +101,9 @@
         // Creating some defaults, extending them with any options that were provided
         options = $.extend({
             //navigation
-            menu: '#myMenu',
-		    lockAnchors: false,
-		    anchors:['contentArea01', 'contentArea02', 'contentArea03'],
+            menu: '#mainMenu',
+            anchors:['page01','page02','page03'],
+            lockAnchors: false,
             navigation: true,
             navigationPosition: 'right',
             navigationTooltips: [],
@@ -893,7 +893,7 @@
         * Determines if the URL anchor destiny is the starting section (the one using 'active' class before initialization)
         */
         function isDestinyTheStartingSection(){
-            var destinationSection = getSectionByAnchor(getAnchorsURL().contentSection);
+            var destinationSection = getSectionByAnchor(getAnchorsURL().section);
             return !destinationSection || destinationSection.length && destinationSection.index() === startingSection.index();
         }
 
@@ -1712,7 +1712,7 @@
         */
         function scrollToAnchor(){
             var anchors =  getAnchorsURL();
-            var sectionAnchor = anchors.contentSection;
+            var sectionAnchor = anchors.section;
             var slideAnchor = anchors.slide;
 
             if(sectionAnchor){  //if theres any #
@@ -1731,7 +1731,7 @@
         function hashChangeHandler(){
             if(!isScrolling && !options.lockAnchors){
                 var anchors = getAnchorsURL();
-                var sectionAnchor = anchors.contentSection;
+                var sectionAnchor = anchors.section;
                 var slideAnchor = anchors.slide;
 
                 //when moving to a slide in the first section for the first time (first time to add an anchor to the URL)
