@@ -13,7 +13,7 @@ $(document).ready(function() {
 /*font-typing*/
 $('#introPage h2').typeIt({
 	strings: 'Portfolio',
-	speed:100,
+	speed:75,
 	autoStart: false,
 	cursor: false
 });
