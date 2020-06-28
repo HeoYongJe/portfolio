@@ -15,18 +15,25 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
     background:url(../img/mainBack07.jpg)no-repeat;
 }
 /* common */
+.section .contentSet{
+    max-width:1280px;
+    width:80%;
+    margin:0 auto;
+}
 .contentSet h2{
     font-size:4em;
     padding-bottom:100px;
-    background: linear-gradient(to right, #99aece, #eeeeee); /*#0f578e*/
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    text-align:center;
+    /* background: linear-gradient(to right, #99aece, #eeeeee); #0f578e */
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
 }
 .contentSet span{
     background: linear-gradient(to right, #99aece, #eeeeee); /*#0f578e*/
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align:center;
+    /* padding-left:23px; */
 }
 
 /* nav */
@@ -54,17 +61,36 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
     display:none;
 }
 
-/* contentSection */
+
+/* #introPage */
+#introPage{
+    position:relative;
+}
 #introPage h2{
-    font-size:6em;
+    font-size:5em;
     text-transform: uppercase;
     letter-spacing: 2rem;
+    text-align:left;
 }
-.section .contentSet{
-    max-width:1280px;
-    width:80%;
-    margin:0 auto;
+.scrollBtnContainer{
+    width:100%;
+    display:block;
+    text-align:center;
 }
+#scrollGideBtn{
+    background: none;
+    border:0;
+    position: absolute;
+    bottom:60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#scrollGideBtn img{
+    width:50px;
+}
+
+
+/* #itemArea  */
 #itemArea ul{
     display:flex;
     justify-content:space-around;
@@ -86,6 +112,15 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
     display:block;
 }
 
-/* 
+
+/* #contactArea */
+#contactArea dl{
+    display:flex;
+}
+
+
+
+/*
+이미지 출처 
 <a href='https://www.freepik.com/free-photos-vectors/mockup'>Mockup psd created by yeven_popov - www.freepik.com</a>
 */
