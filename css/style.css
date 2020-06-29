@@ -7,12 +7,15 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
 
 #introPage{
     background:url(../img/mainBack10.jpg)no-repeat;
+    background-size:cover;
 }
 #itemArea{
-    background:url(../img/mainBack06.jpg)no-repeat;
+    background:url(../img/mainBack12.jpg)no-repeat;
+    background-size:cover;
 }
 #contactArea{
     background:url(../img/mainBack07.jpg)no-repeat;
+    background-size:cover;
 }
 /* common */
 .section .contentSet{
@@ -123,4 +126,5 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
 /*
 이미지 출처 
 <a href='https://www.freepik.com/free-photos-vectors/mockup'>Mockup psd created by yeven_popov - www.freepik.com</a>
+<a href='https://www.freepik.com/free-photos-vectors/mockup'>Mockup vector created by rawpixel.com - www.freepik.com</a>
 */
