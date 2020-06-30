@@ -6,15 +6,15 @@ body{
 ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
 
 #introPage{
-    background:url(../img/mainBack10.jpg)no-repeat;
+    background:url(../img/mainBack13.jpg)no-repeat;
     background-size:cover;
 }
 #itemArea{
-    background:url(../img/mainBack12.jpg)no-repeat;
+    background:url(../img/mainBack14.jpg)no-repeat;
     background-size:cover;
 }
 #contactArea{
-    background:url(../img/mainBack07.jpg)no-repeat;
+    background:url(../img/mainBack15.jpg)no-repeat;
     background-size:cover;
 }
 /* common */
@@ -32,7 +32,7 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
     -webkit-text-fill-color: transparent; */
 }
 .contentSet span{
-    background: linear-gradient(to right, #99aece, #eeeeee); /*#0f578e*/
+    background: linear-gradient(to right, #b1e0f0, #eeeeee); /*#0f578e 99aece*/
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align:center;
