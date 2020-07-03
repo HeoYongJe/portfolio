@@ -74,6 +74,14 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
     text-transform: uppercase;
     letter-spacing: 2rem;
     text-align:left;
+
+}
+.introDivideLayout{
+
+}
+.introDivideLayout img{
+    width:50%;
+
 }
 .scrollBtnContainer{
     width:100%;
