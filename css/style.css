@@ -32,7 +32,7 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
     -webkit-text-fill-color: transparent; */
 }
 .contentSet span{
-    background: linear-gradient(to right, #b1e0f0, #eeeeee); /*#0f578e 99aece*/
+    background: linear-gradient(to right, #f89300, #eeeeee); /*#0f578e 99aece*/
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align:center;
@@ -58,7 +58,7 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
     display:block;
     width:100%;
     text-decoration: none;
-    color:#ffffff; /*#0f4c8e*/
+    color:#f89300; /*#0f4c8e*/
 }
 #mobileBtn{
     display:none;
@@ -130,6 +130,8 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
 /* #contactArea */
 #contactArea dl{
     display:flex;
+    justify-content: space-between;
+    margin:15px 0;
 }
 
 
