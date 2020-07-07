@@ -20,13 +20,14 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
 }
 /* common */
 .section .contentSet{
-    max-width:1000px;
+    max-width:960px;
     width:80%;
     margin:0 auto;
 }
 .contentSet h2{
     font-size:3em;
     text-align:center;
+    display:none;
     /* background: linear-gradient(to right, #99aece, #eeeeee); #0f578e */
     /* -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
@@ -74,6 +75,7 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
     text-transform: uppercase;
     letter-spacing: 2rem;
     text-align:left;
+    display:block !important;
 
 }
 .introDivideLayout{
@@ -125,6 +127,9 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
 }
 #itemArea ul li a img{
     width:100%;
+}
+.slide{
+    width:auto !important;
 }
 
 /* #contactArea */
