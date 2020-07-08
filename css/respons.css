@@ -3,17 +3,29 @@
 }; */
 
 @media screen and (max-width:767px){
+/* nav */
 #fp-nav{
     display:none !important;
 }
 #mainNav div ul li{
     width:120px;
 }
+
+/* #introPage */
 #introPage h2{
     font-size:2em;
     letter-spacing:0.1em;
 }
-.slide{
+
+/* slide  */
+.fp-tableCell{
     width:80% !important;
+}
+.fp-tableCell img{
+    width:100%;
+}
+.fp-controlArrow.fp-next{
+    width:20px;
+    height:20px;
 }
 };

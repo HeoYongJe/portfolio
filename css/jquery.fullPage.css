@@ -68,7 +68,7 @@ html.fp-enabled,
     transform: translate3d(0,0,0);
 }
 .fp-controlArrow.fp-prev {
-    left: 50px;
+    left: 10%;
     background:url(../img/arrowLeft.png)no-repeat;
     width: 50px;
     background-size: cover;
@@ -79,7 +79,7 @@ html.fp-enabled,
     border-color: transparent #fff transparent transparent; */
 }
 .fp-controlArrow.fp-next {
-    right: 50px;
+    right: 10%;
     background:url(../img/arrowRight.png)no-repeat;
     width: 50px;
     background-size: cover;

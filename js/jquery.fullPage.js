@@ -189,7 +189,7 @@
         var isTouch = (('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0) || (navigator.maxTouchPoints));
         var container = $(this);
         var windowsHeight = $window.height();
-        var isResizing = false;
+        var isResizing = true;
         var isWindowFocused = true;
         var lastScrolledDestiny;
         var lastScrolledSlide;
