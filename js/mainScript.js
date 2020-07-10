@@ -10,7 +10,12 @@ $(document).ready(function() {
 });
 
 
+// setbutton class 
+const $fadeTop = document.querySelector('.fadeTop');
 
+window.onload = function(){
+	
+}
 
 /*font-typing*/
 // $('#introPage h2').typeIt({
