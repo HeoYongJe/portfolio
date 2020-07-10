@@ -10,10 +10,12 @@ $(document).ready(function() {
 });
 
 
+
+
 /*font-typing*/
-$('#introPage h2').typeIt({
-	strings: 'Portfolio',
-	speed:75,
-	autoStart: false,
-	cursor: false
-});
+// $('#introPage h2').typeIt({
+// 	strings: 'Portfolio',
+// 	speed:75,
+// 	autoStart: false,
+// 	cursor: false
+// });

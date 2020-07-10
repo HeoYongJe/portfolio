@@ -69,7 +69,7 @@ html.fp-enabled,
     transform: translate3d(0,0,0);
 }
 .fp-controlArrow.fp-prev {
-    left: 10%;
+    left: 15%;
     background:url(../img/arrowLeft.png)no-repeat;
     width: 50px;
     background-size: cover;
@@ -80,7 +80,7 @@ html.fp-enabled,
     border-color: transparent #fff transparent transparent; */
 }
 .fp-controlArrow.fp-next {
-    right: 10%;
+    right: 15%;
     background:url(../img/arrowRight.png)no-repeat;
     width: 50px;
     background-size: cover;
@@ -129,7 +129,7 @@ html.fp-enabled,
     margin: 0 auto !important;
 }
 .fp-slidesNav.bottom {
-    bottom: 150px;
+    bottom: 180px;
 }
 .fp-slidesNav.top {
     top: 17px;
