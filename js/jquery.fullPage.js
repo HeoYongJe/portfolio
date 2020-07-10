@@ -108,7 +108,7 @@
             navigationPosition: 'right',
             navigationTooltips: [],
             showActiveTooltip: false,
-            slidesNavigation: false,
+            slidesNavigation: true,
             slidesNavPosition: 'bottom',
             scrollBar: false,
             hybrid: false,
