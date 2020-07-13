@@ -28,7 +28,6 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
 .contentSet h2{
     font-size:3em;
     text-align:center;
-    display:none;
     /* background: linear-gradient(to right, #99aece, #eeeeee); #0f578e */
     /* -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
@@ -81,7 +80,6 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
     text-transform: uppercase;
     letter-spacing: 0.5rem;
     text-align:left;
-    display:block !important;
 
 }
 .introDivideLayout{
@@ -178,7 +176,16 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
     width:800px;
     margin:0 auto;
 }
-
+.fadeTop{
+    position: relative;
+    bottom:-50px;
+    display:none;
+}
+.fadeTopOn{
+    position: relative;
+    bottom:0px;
+    display:block;
+}
 
 
 /*

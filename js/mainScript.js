@@ -10,12 +10,16 @@ $(document).ready(function() {
 });
 
 
-// setbutton class 
+// setbutton class
 const $fadeTop = document.querySelector('.fadeTop');
+const $introDivideLayout = document.querySelector('.introDivideLayout');
+const fadeTopOn = () => ([...$introDivideLayout.classList].includes('fadeTopOn'));
 
-window.onload = function(){
+// const $startWindow = function(){
+// 	fadeTopOn();
+// }
 
-}
+$fadeTop.addEventListener('load', () => $fadeTopOn());
 // 페이지 열릴 시 위에서 올라오는 스크립트 실행
 
 /*font-typing*/
