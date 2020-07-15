@@ -28,6 +28,7 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
 .contentSet h2{
     font-size:3em;
     text-align:center;
+    display:none;
     /* background: linear-gradient(to right, #99aece, #eeeeee); #0f578e */
     /* -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
@@ -152,6 +153,7 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
     text-decoration:none;
     transition:0.4s;
     font-size: 13px;
+    border:1px solid #0f4c8e;
 }
 .itemContent a:hover{
     background:none;
