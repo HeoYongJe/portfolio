@@ -23,6 +23,7 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
     max-width:980px;
     width:100%;
     margin:0 auto;
+    margin-top:80px;
     padding:0 30px;
 }
 .contentSet h2{
@@ -42,12 +43,17 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
 }
 
 /* nav */
-#mainNav div ul{
+#mainNav{
+    background:#f9f9f9;
+    width:100%;
     overflow:hidden;
     position:fixed;
     top:0;
-    height:80px;
     z-index: 9999;
+}
+#mainNav{
+    height:80px;
+    
 }
 #mainNav div ul li{
     float: left;
