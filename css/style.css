@@ -10,10 +10,6 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
     background-size:cover; 
 
 }
-#itemArea{
-    background:url(../img/mainBack17.jpg)no-repeat;
-    background-size:cover;
-}
 #contactArea{
     /* background:url(../img/mainBack18.jpg)no-repeat; */
 }
@@ -75,7 +71,9 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
 
 #introPage{
     position:relative;
-    
+    max-height:860px;
+    height:100%;
+    margin-top:80px;
 }
 #introPage .contentSet{
     max-width:1280px;
@@ -94,7 +92,7 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
     align-items: center;
 }
 .introDivideLayout img{
-    width:48%;
+    display:none;
 
 }
 .scrollBtnContainer{
@@ -117,6 +115,13 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
 
 /* 아이템 부분 */
 
+#itemArea{
+    background:url(../img/mainBack17.jpg)no-repeat;
+    background-size:cover;
+    height:100%;
+    padding:175px 0;
+    max-height:860px;
+}
 .contentFloat{
     text-align:left;
     max-width:360px;
@@ -131,7 +136,9 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
     position:absolute;
     top:47%;
     left:45%;
+    display:none;
 }
+
 .itemFlex{
     display:flex;
     justify-content: space-between;
