@@ -13,13 +13,15 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
 #contactArea{
     /* background:url(../img/mainBack18.jpg)no-repeat; */
 }
+#allArea{
+    margin:0 auto;
+    width:100%;
+}
 /* common */
 .section .contentSet{
-    max-width:1080px;
     width:100%;
+    max-width:1080px;
     margin:0 auto;
-
-    padding:0 30px;
 }
 .contentSet h2{
     font-size:3em;
@@ -36,6 +38,20 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
     text-align:center;
     /* padding-left:23px; */
 }
+.a11yHidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    clip-path: polygon(0 0, 0 0, 0 0);
+}
+.clearfix{
+    content:'';
+    clear:both;
+    display:block;
+}
+
 /* nav */
 #mainNav{
     background:#f9f9f9;
@@ -44,11 +60,13 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
     position:fixed;
     top:0;
     z-index: 9999;
+    height:80px;    
 }
-#mainNav{
-    height:80px;
-    
+#mainNav div{
+    max-width:1080px;    
+    margin:0 auto;
 }
+
 #mainNav div ul li{
     float: left;
     width: 150px;
@@ -125,6 +143,9 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
 .contentFloat{
     text-align:left;
     max-width:360px;
+    width:28%;
+    float: left;
+    margin: 2.667%;
 }
 .contentFloat figure{
     position:relative;
@@ -132,22 +153,32 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
     width:100%;
     height:100%;
 }
+.contentFloat figure:hover figcaption{
+    opacity: 0.7;
+    transition:0.3s;
+    background:#333;
+    color:#fff;
+
+}
+.contentFloat figure a{
+    width:100%;
+    display:block;
+}
 .contentFloat figure figcaption{
     position:absolute;
     top:47%;
     left:45%;
-    display:none;
+    opacity: 0;
+    transition:0.3s;
 }
 
 .itemFlex{
-    display:flex;
-    justify-content: space-between;
+    overflow:hidden;
 }
 .contentFloat img{
     display:block;
     margin:0 auto;
     box-shadow:3px 3px 10px 2px rgba(0,0,0,0.4);
-    float:left;
     width:100%;
 }
 
