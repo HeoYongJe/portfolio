@@ -169,8 +169,6 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
 .contentFloat figure:hover figcaption{
     display:block;
 }
-
-
 .contentFloat figure img{
     width:100%;
     display:block;
@@ -184,8 +182,35 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
     display:none;
     transition:0.3s;
 }
-
-.itemFlex{
+.figure .figureContent{
+    display:none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.closeBtn{
+    display:none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/detail-close.png);
+    transition-duration: 300ms;
+    cursor: pointer;
+    text-indent: -200px;
+    font-size: 1px;
+    overflow: hidden;
+    border: none;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+.itemFloat{
     overflow:hidden;
 }
 .contentFloat img{
