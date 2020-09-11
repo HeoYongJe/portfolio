@@ -168,6 +168,13 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
 }
 .contentFloat figure:hover figcaption{
     display:block;
+    transition:0.3s;
+    font-size:30px;
+    font-weight:600;
+    color:#111;
+}
+.contentFloat figure:hover img{
+    opacity:0.5;
 }
 .contentFloat figure img{
     width:100%;
@@ -177,8 +184,8 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
 }
 .contentFloat figure figcaption{
     position:absolute;
-    top:47%;
-    left:45%;
+    top:42%;
+    left:40%;
     display:none;
     transition:0.3s;
 }
