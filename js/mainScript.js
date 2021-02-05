@@ -5,32 +5,33 @@ const $introDivideLayout = document.querySelector('.introDivideLayout');
 const $contentFloat = document.querySelector('.contentFloat');
 const $figureContent = document.querySelector('.figureContent');
 const $closeBtn = document.querySelector('.closeBtn');
-const $titleAndContent = document.querySelector('.titleAndContent');
 const fadeTopOn = () => ([...$introDivideLayout.classList].includes('fadeTopOn'));
 
 
 // const $startWindow = function(){
 // 	fadeTopOn();
 // }
+console.log($contentFloat.length)
 const render = () =>{
-   for (let i = 0; i < contentFloat.length; i++) {
-        let item = contentFloat[i];
+    console.log($contentFloat.length)
+   for (let i = 0; i < $contentFloat.length; i++) {
+        let item = $contentFloat[i];
         item.addEventListener('click', setClick);
     } 
 
-    for (let i = 0; i < closeBtn.length; i++) {
-        let closeBtn = closeBtn[i];
-        closeBtn.addEventListener('click', closeClick);
+    for (let i = 0; i < $closeBtn.length; i++) {
+        let closeItem = $closeBtn[i];
+        closeItem.addEventListener('click', closeClick);
     }
 }
 
 const setClick = () => {
-        $titleAndContent.style.display = 'block';
+        $figureContent.style.display = 'block';
         $contentFloat.style.opacity ='0.5';
 };
 
 const closeClick = () => {
-    $titleAndContent.style.display = 'none';
+    $figureContent.style.display = 'none';
     $contentFloat.style.opacity ='1';
 
 };

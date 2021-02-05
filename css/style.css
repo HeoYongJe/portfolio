@@ -105,7 +105,7 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
 
 }
 .introDivideLayout{
-    display: flex;
+    display: flex; 
     justify-content: space-between;
     align-items: center;
 }
@@ -143,9 +143,9 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
 .contentFloat{
     text-align:left;
     max-width:360px;
-    width:28%;
+    /* width:28%;
     float: left;
-    margin: 2.667%;
+    margin: 2.667%; */
 }
 .contentFloat figure{
     position:relative;
