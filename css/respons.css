@@ -1,41 +1,46 @@
-@media screen and (max-width: 1280px){
+@media screen and (min-width: 1280px) {
+    #mobileBtn {
+        display: block !important;
+        width: 100px;
+        background: blue;
+        position: absolute;
+        top: 100px;
+        right: 0;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    #mobileBtn {
+        display: block !important;
+        width: 100px;
+        background: yellow;
+        position: absolute;
+        top: 100px;
+        right: 0;
+    }
+}
+
+/* 
+@media screen and (min-width: 768px) {
     #mobileBtn{
-        display:block;
-        width:100px;
-        background:orange;
-        position:absolute;
+        display: block !important;
+        width: 100px;
+        background: orange;
+        position: absolute;
         top: 0;
         right: 0;
     }
-};
+} */
 
-@media screen and (min-width: 768px){
-    #mobileBtn{
-        display:none !important;
-    }
-};
 
 @media screen and (max-width: 767px) {
-
-/* nav */
-    #mainNav div ul li{
-        width:120px;
-    }
-
-/* #introPage */
-    #introPage h2{
-        font-size:2em;
-        letter-spacing:0.1em;
-    }
-    .introDivideLayout img{
-        display:none;
-    }
-
-#mobileBtn{
-        display:block !important;
-        background:black;
-        position:absolute;
-        top: 0;
+    #mobileBtn {
+        display: block !important;
+        width: 100px;
+        background: black;
+        position: absolute;
+        top: 100px;
         right: 0;
     }
-};
+}
