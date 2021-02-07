@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,82 +8,86 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/respons.css">
     <link rel="stylesheet" href="./css/scrollAnimation.css">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
     <title>portfolio</title>
 </head>
+
 <body>
     <!--  id="navbar" class="collapse navbar-collapse" -->
-    <section>
-        <div>
-            <ul id="mainMenu" class="clearfix">
-                <li data-menuanchor="firstPage"><a href="#page01">ABOUT ME</a></li>
-                <li data-menuanchor="secondPage"><a href="#page02">PORTFOLIO</a></li>
-                <li data-menuanchor="thirdPage"><a href="#page03">CONTACT</a></li>
-            </ul>
-            <button id="mobileBtn"></button>            
-        </div>
-    </section>
-    <section id="allArea">
-        <article id="introPage" class="section" data-menuanchor="page01">
-            <div class="contentSet">
-                <div class="introDivideLayout">
-                    <h2 class="fadeTop">Portfolio</h2>
-                    <img class="fadeTop" src="./img/mainImg01.png" alt="">                    
+    <div class="container-fluid">
+        <section id="mainNav">
+            <div>
+                <ul id="mainMenu" class="clearfix">
+                    <li data-menuanchor="firstPage"><a href="#page01">ABOUT ME</a></li>
+                    <li data-menuanchor="secondPage"><a href="#page02">PORTFOLIO</a></li>
+                    <li data-menuanchor="thirdPage"><a href="#page03">CONTACT</a></li>
+                </ul>
+                <button id="mobileBtn"></button>
+            </div>
+        </section>
+        <section id="contentArea">
+            <article id="introPage" data-menuanchor="page01">
+                <div class="contentSet">
+                    <div class="introDivideLayout">
+                        <h2 class="fadeTop">Portfolio</h2>
+                        <img class="fadeTop" src="./img/mainImg01.png" alt="">
+                    </div>
+                    <div class="scrollBtnContainer">
+                        <a data-menuanchor="secondPage" id="scrollGideBtn" class="scrollAnimation" href="#page02"><img
+                                src="./img/arrowGide.png" alt="스크롤가이드화살표"></a>
+                    </div>
                 </div>
-                <div class="scrollBtnContainer">
-                    <a data-menuanchor="secondPage" id="scrollGideBtn" class="scrollAnimation" href="#page02"><img src="./img/arrowGide.png" alt="스크롤가이드화살표"></a>
-                </div>         
-            </div>
-        </article>
-        <article id="itemArea" class="section" data-menuanchor="page02">
-            <div class="contentSet itemFloat">
-                <h2>LIST</h2>
-                <div class="contentFloat">
-                    <figure class="figure">
-                        <a href="#">
-                            <img src="./img/1.jpg" alt="">
-                            <figcaption>
-                                <span>NIKE</span>
-                            </figcaption>    
-                            <div class="figureContent">
-                                <p>Lorem ipsum dolor sit amet consectetur</p>
-                                <p>Lorem ipsum dolor sit amet consectetur</p>
-                                <p>Lorem ipsum dolor sit amet consectetur</p>
-                            </div>
-                            <button class="closeBtn">상세설명 닫기</button>    
-                        </a> 
-                    </figure>
+            </article>
+            <article id="itemArea" data-menuanchor="page02">
+                <div class="contentSet itemFloat">
+                    <h2>LIST</h2>
+                    <div class="contentFloat">
+                        <figure class="figure">
+                            <a href="#">
+                                <img src="./img/1.jpg" alt="">
+                                <figcaption>
+                                    <span>NIKE</span>
+                                </figcaption>
+                                <div class="figureContent">
+                                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                                </div>
+                                <button class="closeBtn">상세설명 닫기</button>
+                            </a>
+                        </figure>
+                    </div>
                 </div>
-            </div>
-        </article>
-        <article id="contactArea" class="section" data-menuanchor="page03">
-            <div class="contentSet fadeTop">
-                <h2>CONTACT</h2>
-                <dl>
-                    <dt>NAME</dt>
-                    <dd>HEO YONG JE</dd>
-                </dl>
-                <dl>
-                    <dt>PHONE</dt>
-                    <dd>010.3164.7490</dd>
-                </dl>
-                <dl>
-                    <dt>MAIL</dt>
-                    <dd>hyj.campus@gmail.com</dd>
-                </dl>
-                <dl>
-                    <dt>GIT</dt>
-                    <dd>https://github.com/HeoYongJe</dd>
-                </dl>
-            </div>
-        </article>
-    </section>
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-<!-- <script src="https://cdn.jsdelivr.net/jquery.typeit/4.2.3/typeit.min.js"></script> -->
-<!-- <script src="js/bootstrap.min.js"></script> -->
-<script src="./js/mainScript.js"></script>    
+            </article>
+        </section>
+        <section id="footer">
+            <article id="contactArea" data-menuanchor="page03">
+                <div class="contentSet fadeTop">
+                    <h2>CONTACT</h2>
+                    <dl>
+                        <dt>NAME</dt>
+                        <dd>HEO YONG JE</dd>
+                    </dl>
+                    <dl>
+                        <dt>PHONE</dt>
+                        <dd>010.3164.7490</dd>
+                    </dl>
+                    <dl>
+                        <dt>MAIL</dt>
+                        <dd>hyj.campus@gmail.com</dd>
+                    </dl>
+                    <dl>
+                        <dt>GIT</dt>
+                        <dd>https://github.com/HeoYongJe</dd>
+                    </dl>
+                </div>
+            </article>
+        </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/mainScript.js"></script>
 </body>
-</html>
 
+</html>

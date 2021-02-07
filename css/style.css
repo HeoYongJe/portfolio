@@ -18,10 +18,13 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
     width:100%;
 }
 /* common */
-.section .contentSet{
+body section{
     width:100%;
-    max-width:1080px;
+    max-width:1170px;
     margin:0 auto;
+}
+body section article{
+    padding:0 15px !important;
 }
 .contentSet h2{
     font-size:3em;
@@ -54,19 +57,21 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
 
 /* nav */
 #mainNav{
-    background:#f9f9f9;
+    background:orange;
     width:100%;
+    max-width:100%;
     overflow:hidden;
     position:fixed;
     top:0;
+    left:0;
+    right:0;
     z-index: 9999;
     height:80px;    
 }
 #mainNav div{
-    max-width:1080px;    
-    margin:0 auto;
+    max-width: 1170px;
+    margin: 0 auto;
 }
-
 #mainNav div ul li{
     float: left;
     width: 150px;
@@ -235,10 +240,6 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
     justify-content: space-between;
     margin:15px 0;
 }
-#contactArea .contentSet{
-    width:800px;
-    margin:0 auto;
-}
 .fadeTop{
     position: relative;
     bottom:-50px;
@@ -249,6 +250,9 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
     bottom:0px;
     display:block;
 }
+
+
+/* #footer */
 
 
 /*
