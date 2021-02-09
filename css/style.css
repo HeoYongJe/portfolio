@@ -55,11 +55,11 @@ body section article{
 
 /* nav */
 #mainNav{
-       
+    margin-bottom:80px;   
 }
 #mainNav div{
     width:100%;
-    background:orange;
+    background:#f9f9f9;
     position:fixed;
     top:0;
     z-index: 9999;
@@ -68,11 +68,11 @@ body section article{
 #mainNav div ul{
     max-width: 1170px;
     margin: 0 auto;
+    position:relative;
 }
 #mainNav div ul li{
     float: left;
     width: 150px;
-    text-align: center;
     height: 80px;
     line-height: 80px;
 }
@@ -88,6 +88,23 @@ body section article{
 
 
 /* #introPage */
+#introPage{
+    background:url(../img/intro2.png) no-repeat;
+    background-size:cover;
+    height: 92vh;
+    max-width: 100%;
+    position: relative;
+}
+#introPage h2{
+    position: absolute;
+    right: 5%;
+    top: 40%;
+    font-size: 100px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    font-weight:bold;
+}
 .scrollBtnContainer{
     width:100%;
     display:block;
@@ -95,10 +112,10 @@ body section article{
 }
 #scrollGideBtn{
     background: none;
-    border:0;
+    border: 0;
     position: absolute;
-    top:100px;
-    left: 50%;
+    bottom: 100px;
+    right: 5%;
     transform: translate(-50%, -50%);
 }
 #scrollGideBtn img{
@@ -110,7 +127,6 @@ body section article{
 #contentArea{
     background:url(../img/mainBack17.jpg)no-repeat;
     background-size:cover;  
-    margin-top: 80px;
 }
 #itemArea{
     height:100%;
@@ -139,20 +155,22 @@ body section article{
 }
 
 /* hover */
-.contentFloat figure:hover img{
+.contentFloat figure:hover,figure:focus img{
     transform:scale(1.1);
     transition:0.4s;
 }
-.contentFloat figure:hover figcaption{
+.contentFloat figure:hover,figure:focus figcaption{
     display:block;
     transition:0.3s;
     font-size:30px;
     font-weight:600;
     color:#111;
 }
-.contentFloat figure:hover img{
+.contentFloat figure:hover,figure:focus img{
     opacity:0.5;
 }
+/* hover end */
+
 .contentFloat figure img{
     width:100%;
     display:block;
@@ -231,7 +249,9 @@ body section article{
 
 
 /* #footer */
-
+#footer{
+    padding:50px 0 100px 0;
+}
 
 /*
 이미지 출처 
