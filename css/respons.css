@@ -3,32 +3,16 @@
         background-size: cover;
     }
 }
-
+/* max-width 1920 end */
 
 @media screen and (min-width: 1280px) {
     #mobileBtn{
         display:none;
     }
-
 }
+/* min-width 1280 end */
 
 @media screen and (max-width: 1280px) {
-
-    /* #itemArea{
-        display:flex;
-        
-    }
-    #itemArea .itemFloat{
-        flex-direction: column;
-        width: 50%;
-    }
-    #itemArea h2{
-        display:none;
-    }
-    #itemArea .contentFloat{
-        margin: 20px;
-        overflow: hidden;
-    } */
     #introPage {
         background: url(../img/intro2.png) no-repeat 10%;
     }
@@ -37,10 +21,12 @@
         font-size: 90px;
     }
 }
-
+/* max-width 1280 end */
 
 
 @media screen and (max-width: 1024px) {
+
+    /* mainMenu */
     #mainMenu.on {
         display: block;
         animation-name: fadeInAni;
@@ -51,15 +37,7 @@
       #mainMenu.off {
         visibility: hidden;
       }
-
-
-    #introPage {
-        background: url(../img/intro2.png) no-repeat 15%;
-    }
-
-    #introPage h2 {
-        font-size: 85px;
-    }
+    /* mainMenu end  */
 
     #mobileBtn {
         display: block;
@@ -71,12 +49,10 @@
         padding: 0;
         background: rgba(255, 255, 255, 0);
     }
-
     #mobileBtn:hover,
     .menuBtn:focus {
         background: rgba(211, 211, 211, 0.4);
     }
-
     .btnTop,
     .btnMiddle,
     .btnBottom {
@@ -103,10 +79,16 @@
         border: 1px solid #eee;
         margin-bottom: -1px;
     }
+    #introPage {
+        background: url(../img/intro2.png) no-repeat 15%;
+    }
+
+    #introPage h2 {
+        font-size: 85px;
+    }
 
     #itemArea {
         display: flex;
-
     }
 
     #itemArea .itemFloat {
@@ -123,6 +105,7 @@
         overflow: hidden;
     }
 }
+/* max-width 1024 end */
 
 
 @media screen and (max-width: 767px) {

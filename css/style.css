@@ -49,7 +49,7 @@ body section article {
     /* background: linear-gradient(to right, #f89300, #eeeeee); #0f578e 99aece
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
-    text-align: center;
+    /* text-align: center; */
     /* padding-left:23px; */
 }
 
@@ -168,9 +168,7 @@ body section article {
     text-align: left;
     overflow: hidden;
     margin: 10px;
-    /* width:28%;
-    float: left;
-    margin: 2.667%; */
+    position: relative;
 }
 
 .contentFloat figure {
@@ -178,34 +176,32 @@ body section article {
     margin: 0;
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 
 .contentFloat figure a {
     width: 100%;
     display: block;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color:#111;
 }
-
-/* hover */
-.contentFloat figure:hover img {
-    transform: scale(1.1);
-    transition: 0.4s;
-    cursor: pointer;
-}
-
-.contentFloat figure:hover figcaption {
-    display: block;
-    transition: 0.3s;
-    font-size: 30px;
+.contentFloat figure a h3{
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 12px;
+    font-size: 1.5em;
+    line-height: 1.2em;
     font-weight: 600;
-    color: #111;
 }
-
-.contentFloat figure:hover img {
-    opacity: 0.5;
+figure a h3 span{
+    display:block;
+    text-align:left;
+    font-size:0.8em;
+    color:#333;
 }
-
-/* hover end */
-
 .contentFloat figure img {
     width: 100%;
     display: block;
@@ -214,26 +210,69 @@ body section article {
 }
 
 .contentFloat figure figcaption {
-    position: absolute;
-    top: 50%;
+    /* 기존 position: absolute;
+    bottom: 0%;
     left: 50%;
-    display: none;
+    display: block;
     transition: 0.3s;
     transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: 600;
+    color: #111; */
+    position: absolute;
+    bottom: 0%;
+    display: block;
+    transition: 0.3s;
+    font-size: 22px;
+    font-weight: 600;
+    color: #111;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    background: #f9f9f9;
 }
 
 .figure .figureContent {
     display: none;
     position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
+    top: 50%;
     box-sizing: border-box;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 100%;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 5% 8%;
+    height: 100%;
+}
+.figure .figureContent p{
+    
 }
 
+/* hover */
+.contentFloat figure:hover img {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+/* .contentFloat figure:hover figcaption {
+    display: block;
+    transition: 0.3s;
+    font-size: 30px;
+    font-weight: 600;
+    color: #111;
+} */
+
+/* .contentFloat figure:hover img {
+    opacity: 0.5;
+} */
+
+/* hover end */
+
 .closeBtn {
-    /* display:none;
+    display:none;
     position: absolute;
     top: 0;
     right: 0;
@@ -249,7 +288,7 @@ body section article {
     padding: 0;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: transparent; */
+    background-color: transparent;
 }
 
 .menuClose {
