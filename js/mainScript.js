@@ -15,13 +15,12 @@ const mainMenu = document.getElementById('mainMenu');
 
 
 
-    figure.addEventListener('click', function() {
-        figureContent.style.display = 'block';
-        hoverImg.style.opacity = '0.3';
-        hoverImg.style.hover = 'none;'
-        figcaption.style.display = 'none';
+figure.addEventListener('click', function () {
+    figureContent.style.display = 'block';
+    hoverImg.style.opacity = '0.3';
+    figcaption.style.display = 'none';
 
-    });
+});
 
 
 

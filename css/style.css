@@ -129,7 +129,7 @@ body section article {
     font-weight: bold;
 }
 
-.scrollBtnContainer {
+.scrollBtnTop {
     width: 100%;
     display: block;
     text-align: center;
@@ -148,6 +148,10 @@ body section article {
     width: 50px;
 }
 
+.scrollBtnBottom img {
+    width: 50px;
+    transform:rotate(180deg);
+}
 
 /* 아이템 부분 */
 #contentArea {
@@ -157,7 +161,7 @@ body section article {
 
 #itemArea {
     height: 100%;
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 #itemArea h2 {
@@ -360,6 +364,9 @@ figure a h3 span{
 /* #footer */
 #footer {
     padding: 50px 0 100px 0;
+    position: relative;
+    background:#0f4c8e;
+    color:#fff;
 }
 
 /*
