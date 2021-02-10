@@ -6,14 +6,9 @@
 
 
 @media screen and (min-width: 1280px) {
-    #mobileBtn {
-        width: 100px;
-        background: blue;
-        position: absolute;
-        top: 100px;
-        right: 0;
+    #mobileBtn{
+        display:none;
     }
-
 
 }
 
@@ -46,6 +41,18 @@
 
 
 @media screen and (max-width: 1024px) {
+    #mainMenu.on {
+        display: block;
+        animation-name: fadeInAni;
+        animation-duration: .8s;
+        animation-timing-function: ease-out;
+      }
+
+      #mainMenu.off {
+        visibility: hidden;
+      }
+
+
     #introPage {
         background: url(../img/intro2.png) no-repeat 15%;
     }
@@ -55,12 +62,46 @@
     }
 
     #mobileBtn {
-        display: block !important;
-        width: 100px;
-        background: yellow;
+        display: block;
         position: absolute;
-        top: 40px;
+        top: 0;
         right: 0;
+        width: 80px;
+        height: 80px;
+        padding: 0;
+        background: rgba(255, 255, 255, 0);
+    }
+
+    #mobileBtn:hover,
+    .menuBtn:focus {
+        background: rgba(211, 211, 211, 0.4);
+    }
+
+    .btnTop,
+    .btnMiddle,
+    .btnBottom {
+        display: block;
+        width: 26px;
+        height: 3px;
+        margin: 5px auto;
+        background: black;
+        text-align: center;
+    }
+
+    #mainNav div ul {
+        margin-top: 80px;
+        display: none;
+        height: 100vh;
+        background: #f9f9f9;
+    }
+
+    #mainNav div ul li {
+        width: 100%;
+        padding: 0 50px;
+        float: none;
+        background: #fff;
+        border: 1px solid #eee;
+        margin-bottom: -1px;
     }
 
     #itemArea {
@@ -111,33 +152,17 @@
         text-align: center;
     }
 
-    /* #mobileBtn {
-        display: block !important;
-        width: 20px;
-        background: black;
-        position: absolute;
-        top: 40px;
-        right: 20px;
-        border:0;
-    } */
-
-
-    /* body .container-fluid{
-        padding:0 !important;
-    }
-    #mainNav div{
-        width:100%; 
-    } */
     #contactArea div {
         margin: 0 20px;
     }
 
-    #mainNav div {
-        height: 100vh;
-    }
+    #mainNav div {}
 
     #mainNav div ul {
-        margin-top: 100px;
+        margin-top: 80px;
+        display: none;
+        height: 100vh;
+        background: #f9f9f9;
     }
 
     #mainNav div ul li {

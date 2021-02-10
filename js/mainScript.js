@@ -1,41 +1,42 @@
-
 // setbutton class
 const $fadeTop = document.querySelector('.fadeTop');
-const $introDivideLayout = document.querySelector('.introDivideLayout');
-const $contentFloat = document.querySelector('.contentFloat');
-const $figureContent = document.querySelector('.figureContent');
-const $closeBtn = document.querySelector('.closeBtn');
-const fadeTopOn = () => ([...$introDivideLayout.classList].includes('fadeTopOn'));
+
+const contentFloat = document.querySelector('.contentFloat');
+const itemFloat = document.querySelector('.itemFloat');
+const figure = document.querySelector('.figure');
+const figureContent = document.querySelector('.figureContent');
+const closeBtn = document.querySelector('.closeBtn');
+const mobileBtn = document.getElementById('mobileBtn');
+const mainMenu = document.getElementById('mainMenu');
 
 
-// const $startWindow = function(){
-// 	fadeTopOn();
-// }
-console.log($contentFloat.length)
-const render = () =>{
-    console.log($contentFloat.length)
-   for (let i = 0; i < $contentFloat.length; i++) {
-        let item = $contentFloat[i];
-        item.addEventListener('click', setClick);
-    } 
 
-    for (let i = 0; i < $closeBtn.length; i++) {
-        let closeItem = $closeBtn[i];
-        closeItem.addEventListener('click', closeClick);
-    }
-}
+for (let i = 0; i < itemFloat.length; ++i) {
 
-const setClick = () => {
-        $figureContent.style.display = 'block';
-        $contentFloat.style.opacity ='0.5';
-};
-
-const closeClick = () => {
-    $figureContent.style.display = 'none';
-    $contentFloat.style.opacity ='1';
+    const figure = itemFloat[i];
+    console.log(figure)
+    figure.addEventListener('click', function () {
+        figureContent.style.display = 'block';
+    });
 
 };
-// $contentFloat.addEventListener('click', setClick);
+
+
+
+mobileBtn.addEventListener('click', function (e) {
+    mainMenu.classList.add('on');
+    mobileBtn.style.display = 'none';
+    closeBtn.style.display = 'block';
+});
+
+closeBtn.addEventListener('click', function (e) {
+    mainMenu.classList.remove('on');
+    mobileBtn.style.display = 'block';
+    closeBtn.style.display = 'none';
+});
+
+
+
 // $closeBtn.addEventListener('click', closeClick);
 
 // $fadeTop.addEventListener('load', () => $fadeTopOn());
@@ -48,8 +49,3 @@ const closeClick = () => {
 // 	autoStart: false,
 // 	cursor: false
 // });
-
-
-
-
-
