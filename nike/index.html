@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/subStyle.css">
-    <link rel="stylesheet" href="./css/respons.css">
-    <link rel="stylesheet" href="./css/scrollAnimation.css">
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="./../css/subStyle.css">
+    <link rel="stylesheet" href="./../css/respons.css">
+    <link rel="stylesheet" href="./../css/scrollAnimation.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./../css/bootstrap.min.css" rel="stylesheet">
     <title>NIKE</title>
 </head>
 
@@ -21,8 +21,8 @@
             <div>
                 <ul id="mainMenu" class="clearfix">
                     <!-- <li data-menuanchor="firstPage"><a href="#page01">ABOUT ME</a></li> -->
-                    <li data-menuanchor="secondPage"><a href="#itemArea">PORTFOLIO</a></li>
-                    <li data-menuanchor="thirdPage"><a href="#footer">CONTACT</a></li>
+                    <li data-menuanchor="secondPage"><a href="/portfolio/index.html">PORTFOLIO</a></li>
+                    <li data-menuanchor="thirdPage"><a href="./../index.html/#footer">CONTACT</a></li>
                 </ul>
                 <button id="mobileBtn" type="button" class="menuBtn" aria-label="메뉴 열기">
                     <span class="btnTop"></span>
@@ -39,20 +39,47 @@
             <article id="introPage">
                 <div class="contentSet">
                     <div class="introDivideLayout">
-                        <h2 class="fadeTop">Portfolio</h2>
-                        <!-- <img class="fadeTop" src="./img/intro.png" alt="미정"> -->
+                        <h2 class="fadeTop">NIKE</h2>
                     </div>
                     <div class="scrollBtnTop">
                         <a data-menuanchor="secondPage" id="scrollGideBtn" class="scrollAnimation" href="#itemArea"><img
-                                src="./img/arrowGide.png" alt="스크롤가이드화살표"></a>
+                                src="./../img/arrowGide.png" alt="스크롤가이드화살표"></a>
                     </div>
                 </div>
             </article>
-            <article class="subTopContent">
-                
+        </section>
+        <section id="footer" class="clearFix">
+            <article id="contactArea" data-menuanchor="page02">
+                <div class="contentSet">
+                    <h2>CONTACT</h2>
+                    <dl>
+                        <dt>NAME</dt>
+                        <dd>HEO YONG JE</dd>
+                    </dl>
+                    <dl>
+                        <dt>PHONE</dt>
+                        <dd>010.3164.7490</dd>
+                    </dl>
+                    <dl>
+                        <dt>MAIL</dt>
+                        <dd>hyj.campus@gmail.com</dd>
+                    </dl>
+                    <dl>
+                        <dt>GIT</dt>
+                        <dd>https://github.com/HeoYongJe</dd>
+                    </dl>
+                </div>
+                <div class="scrollBtnBottom">
+                    <a data-menuanchor="secondPage" id="scrollGideBtn" class="scrollAnimation" href="#mainNav"><img
+                            src="./../img/arrowGide.png" alt="스크롤가이드화살표"></a>
+                </div>
             </article>
         </section>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/mainScript.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
 </body>
 
 </html>
