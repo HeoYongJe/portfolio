@@ -145,11 +145,11 @@ body section article {
 }
 
 #scrollGideBtn img {
-    width: 50px;
+    width: 50px !important;
 }
 
 .scrollBtnBottom img {
-    width: 50px;
+    width: 50px !important;
     transform:rotate(180deg);
 }
 

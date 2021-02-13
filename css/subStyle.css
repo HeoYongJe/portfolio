@@ -1,0 +1,9 @@
+#subContentArea{
+   background:#f1f1f1;
+   padding: 60px 0;
+}
+#subIntroPage img{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
