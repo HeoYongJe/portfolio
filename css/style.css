@@ -101,11 +101,57 @@ body section article {
     width: 100%;
     text-decoration: none;
     color: #0f4c8e;
-    /*#f89300*/
 }
 
 #mobileBtn {
     display: none;
+}
+
+/* .closeBtn {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/detail-close.png);
+    transition-duration: 300ms;
+    cursor: pointer;
+    text-indent: -200px;
+    font-size: 1px;
+    overflow: hidden;
+    border: none;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+} */
+
+.menuClose {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    background: rgba(33, 55, 120, 0);
+}
+
+.btnRight,
+.btnLeft {
+    display: block;
+    width: 28px;
+    height: 3px;
+    margin: 0 auto;
+    background: #111;
+}
+
+.btnRight {
+    transform: translateY(50%) rotate(45deg);
+}
+
+.btnLeft {
+    transform: translateY(-50%) rotate(-45deg);
 }
 
 
@@ -150,13 +196,12 @@ body section article {
 
 .scrollBtnBottom img {
     width: 50px !important;
-    transform:rotate(180deg);
+    transform: rotate(180deg);
 }
 
 /* 아이템 부분 */
 #contentArea {
-    background: url(../img/mainBack17.jpg)no-repeat;
-    background-size: cover;
+    background: #f9f9f9;
 }
 
 #itemArea {
@@ -168,160 +213,6 @@ body section article {
     text-align: center;
 }
 
-.contentFloat {
-    text-align: left;
-    overflow: hidden;
-    margin: 10px;
-    position: relative;
-}
-
-.contentFloat figure {
-    position: relative;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-}
-
-.contentFloat figure a {
-    width: 100%;
-    display: block;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    color:#111;
-}
-.contentFloat figure a h3{
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
-    margin-bottom: 12px;
-    font-size: 1.5em;
-    line-height: 1.2em;
-    font-weight: 600;
-}
-figure a h3 span{
-    display:block;
-    text-align:left;
-    font-size:0.8em;
-    color:#333;
-}
-.contentFloat figure img {
-    width: 100%;
-    display: block;
-    transform: scale(1);
-    transition: 0.2s;
-}
-
-.contentFloat figure figcaption {
-    /* 기존 position: absolute;
-    bottom: 0%;
-    left: 50%;
-    display: block;
-    transition: 0.3s;
-    transform: translate(-50%, -50%);
-    font-size: 30px;
-    font-weight: 600;
-    color: #111; */
-    position: absolute;
-    bottom: 0%;
-    display: block;
-    transition: 0.3s;
-    font-size: 22px;
-    font-weight: 600;
-    color: #111;
-    width: 100%;
-    text-align: center;
-    padding: 5px;
-    background: #f9f9f9;
-}
-
-.figure .figureContent {
-    display: none;
-    position: absolute;
-    top: 50%;
-    box-sizing: border-box;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    width: 100%;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
-    padding: 5% 8%;
-    height: 100%;
-}
-.figure .figureContent p{
-    
-}
-
-/* hover */
-.contentFloat figure:hover img {
-    transform: scale(1.1);
-    transition: 0.4s;
-}
-
-/* .contentFloat figure:hover figcaption {
-    display: block;
-    transition: 0.3s;
-    font-size: 30px;
-    font-weight: 600;
-    color: #111;
-} */
-
-/* .contentFloat figure:hover img {
-    opacity: 0.5;
-} */
-
-/* hover end */
-
-.closeBtn {
-    display:none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40px;
-    height: 40px;
-    background-image: url(../img/detail-close.png);
-    transition-duration: 300ms;
-    cursor: pointer;
-    text-indent: -200px;
-    font-size: 1px;
-    overflow: hidden;
-    border: none;
-    padding: 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: transparent;
-}
-
-.menuClose {
-    display:none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 80px;
-    height: 80px;
-    background: rgba(33, 55, 120, 0);
-}
-
-.btnRight,
-.btnLeft {
-    display: block;
-    width: 28px;
-    height: 3px;
-    margin: 0 auto;
-    background: #111;
-}
-
-.btnRight {
-    transform: translateY(50%) rotate(45deg);
-}
-
-.btnLeft {
-    transform: translateY(-50%) rotate(-45deg);
-}
-
 .itemFloat {
     overflow: hidden;
     display: flex;
@@ -329,12 +220,48 @@ figure a h3 span{
     align-items: center;
 }
 
-.contentFloat img {
-    display: block;
-    margin: 0 auto;
-    box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.4);
+.boxItem {
+    position: relative;
+    margin: 0;
     width: 100%;
+    height: 100%;
+    margin: 1.5%;
+    box-shadow: 0 5px 15px 0 rgb(1 27 60 / 30%);
 }
+
+.boxItem .itemContent a {
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #111;
+    transition: 0.2s;
+}
+
+.boxItem img {
+    width: 100%;
+    display: block;
+}
+
+.boxItem .boxText{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 100%;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    height: 100%;
+    margin: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 
 .col-xs-6 {
     width: 100%;
@@ -365,8 +292,8 @@ figure a h3 span{
 #footer {
     padding: 50px 0 100px 0;
     position: relative;
-    background:#0f4c8e;
-    color:#fff;
+    background: #0f4c8e;
+    color: #fff;
 }
 
 /*

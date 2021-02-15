@@ -94,14 +94,15 @@
     #itemArea .itemFloat {
         flex-direction: column;
         width: 50%;
+        margin:2% 1%;
     }
 
     #itemArea h2 {
         display: none;
     }
 
-    #itemArea .contentFloat {
-        margin: 20px;
+    #itemArea .boxItem {
+        margin: 2% 1%;
         overflow: hidden;
     }
 }
