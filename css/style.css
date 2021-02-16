@@ -1,7 +1,8 @@
 /* reset */
-body {
+html,body {
     margin: 0;
     padding: 0;
+    font-family: 'GmarketSansLight',sans-serif !important;
 }
 
 ul,
@@ -107,26 +108,6 @@ body section article {
     display: none;
 }
 
-/* .closeBtn {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40px;
-    height: 40px;
-    background-image: url(../img/detail-close.png);
-    transition-duration: 300ms;
-    cursor: pointer;
-    text-indent: -200px;
-    font-size: 1px;
-    overflow: hidden;
-    border: none;
-    padding: 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: transparent;
-} */
-
 .menuClose {
     display: none;
     position: absolute;
@@ -220,13 +201,22 @@ body section article {
     align-items: center;
 }
 
+.itemContent img{
+    transition: 0.3s;
+}
+
+.boxItem .itemContent:hover img {
+    opacity: 0.2;
+    transition: 0.2s;
+}
+
 .boxItem {
     position: relative;
     margin: 0;
     width: 100%;
     height: 100%;
     margin: 1.5%;
-    box-shadow: 0 5px 15px 0 rgb(1 27 60 / 30%);
+    box-shadow: 0 5px 15px 0 rgb(1 27 60 / 10%);
 }
 
 .boxItem .itemContent a {
@@ -237,6 +227,7 @@ body section article {
     line-height: 20px;
     color: #111;
     transition: 0.2s;
+    text-align: right;
 }
 
 .boxItem img {
@@ -244,9 +235,10 @@ body section article {
     display: block;
 }
 
-.boxItem .boxText{
+.boxItem .boxText {
     position: absolute;
     top: 50%;
+    transition: 0.3s;
     transform: translate(-50%, -50%);
     left: 50%;
     width: 100%;
@@ -256,12 +248,42 @@ body section article {
     line-height: 24px;
     height: 100%;
     margin: 0;
-    z-index: 1;
-    display: flex;
+    display: none;
     justify-content: center;
     flex-direction: column;
+    padding: 5%;
+    z-index: 1;
+}
+.boxItem .itemContent:hover .boxText{
+    display:flex;
+    transition: 0.3s;
+
+}
+.boxItem .boxText strong {
+    font-size: 24px;
 }
 
+.boxItem .boxText p {
+    padding: 8px 0;
+    margin: 8px 0;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    font-size: 15px;
+    line-height: 20px;
+    color: #666;
+}
+
+.boxItem .boxText span {
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.boxItem .itemContent span:hover  {
+    transition: 0.3s;
+    color:#0c6cd3;
+    font-weight:600;
+}
 
 .col-xs-6 {
     width: 100%;
