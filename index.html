@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/respons.css">
@@ -18,9 +18,10 @@
     <div class="container-fluid">
         <section id="mainNav">
             <div>
+                <h1>HEO YONG JE, PORTFOLIO</h1>
                 <ul id="mainMenu" class="clearfix">
-                    <li class="menuOut"><a href="#itemArea">PORTFOLIO</a></li>
-                    <li class="menuOut"><a href="#footer">CONTACT</a></li>
+                    <li><a href="#itemArea">PORTFOLIO</a></li>
+                    <li><a href="#footer">CONTACT</a></li>
                 </ul>
                 <button id="mobileBtn" type="button" class="menuBtn" aria-label="메뉴 열기">
                     <span class="btnTop"></span>
@@ -47,32 +48,32 @@
             <article id="itemArea" data-menuanchor="page01">
                 <h2>LIST</h2>
                 <div class="contentSet itemFloat">
-                    <div id="boxItem" class="boxItem" aria-label="나이키 컨텐츠">
+                    <div class="boxItem" aria-label="나이키 컨텐츠" tabindex="0">
                         <div class="itemContent">
                             <div class="boxText">
                                 <strong>NIKE</strong>
                                 <p> Lorem ipsum dolor sit amet consectetur lorem dolor sit amet consectetur lorem</p>
-                                <a href="./nike/index.html"><span>View More +</span></a>
+                                <a class="tabMove" href="./nike/index.html"><span>View More +</span></a>
                             </div>
                             <img class="hoverImg" src="./img/1.jpg" alt="">
                         </div>
                     </div>
-                    <div id="boxItem" class="boxItem" aria-label="김성근보청기 컨텐츠">
+                    <div class="boxItem" aria-label="김성근보청기 컨텐츠" tabindex="0">
                         <div class="itemContent">
                             <div class="boxText">
                                 <strong>ENT</strong>
                                 <p> Lorem ipsum dolor sit amet consectetur lorem dolor sit amet consectetur lorem</p>
-                                <a href="./nike/index.html"><span>View More +</span></a>
+                                <a class="tabMove" href="./nike/index.html"><span>View More +</span></a>
                             </div>
                             <img class="hoverImg" src="./img/2.jpg" alt="">
                         </div>
                     </div>
-                    <div id="boxItem" class="boxItem" aria-label="푸드토크 컨텐츠">
+                    <div class="boxItem" aria-label="푸드토크 컨텐츠" tabindex="0">
                         <div class="itemContent">
                             <div class="boxText">
                                 <strong>FOODTALK</strong>
                                 <p> Lorem ipsum dolor sit amet consectetur lorem dolor sit amet consectetur lorem</p>
-                                <a href="./nike/index.html"><span>View More +</span></a>
+                                <a class="tabMove" href="./nike/index.html"><span>View More +</span></a>
                             </div>
                             <img class="hoverImg" src="./img/3.jpg" alt="">
                         </div>
@@ -81,32 +82,32 @@
                 <!-- 상단 아이템 -->
 
                 <div class="contentSet itemFloat">
-                    <div id="boxItem" class="boxItem" aria-label="나이키 컨텐츠">
+                    <div class="boxItem" aria-label="미앤유외과 컨텐츠" tabindex="0">
+                        <div class="itemContent">
+                            <div class="boxText">
+                                <strong>CNC미앤유</strong>
+                                <p> Lorem ipsum dolor sit amet consectetur lorem dolor sit amet consectetur lorem</p>
+                                <a class="tabMove" href="./nike/index.html"><span>View More +</span></a>
+                            </div>
+                            <img class="hoverImg" src="./img/4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="boxItem" aria-label="나이키 컨텐츠" tabindex="0">
                         <div class="itemContent">
                             <div class="boxText">
                                 <strong>NIKE</strong>
                                 <p> Lorem ipsum dolor sit amet consectetur lorem dolor sit amet consectetur lorem</p>
-                                <a href="./nike/index.html"><span>View More +</span></a>
+                                <a class="tabMove" href="./nike/index.html"><span>View More +</span></a>
                             </div>
                             <img class="hoverImg" src="./img/1.jpg" alt="">
                         </div>
                     </div>
-                    <div id="boxItem" class="boxItem" aria-label="나이키 컨텐츠">
+                    <div class="boxItem" aria-label="나이키 컨텐츠" tabindex="0">
                         <div class="itemContent">
                             <div class="boxText">
                                 <strong>NIKE</strong>
                                 <p> Lorem ipsum dolor sit amet consectetur lorem dolor sit amet consectetur lorem</p>
-                                <a href="./nike/index.html"><span>View More +</span></a>
-                            </div>
-                            <img class="hoverImg" src="./img/1.jpg" alt="">
-                        </div>
-                    </div>
-                    <div id="boxItem" class="boxItem" aria-label="나이키 컨텐츠">
-                        <div class="itemContent">
-                            <div class="boxText">
-                                <strong>NIKE</strong>
-                                <p> Lorem ipsum dolor sit amet consectetur lorem dolor sit amet consectetur lorem</p>
-                                <a href="./nike/index.html"><span>View More +</span></a>
+                                <a class="tabMove" href="./nike/index.html"><span>View More +</span></a>
                             </div>
                             <img class="hoverImg" src="./img/1.jpg" alt="">
                         </div>
@@ -143,6 +144,11 @@
             </article>
         </section>
     </div>
+    <script>
+        document.getElementById("boxItem").focus();
+        jQuery("#boxItem").focus();
+        // document.querySelector('.boxItem').scrollIntoView();
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/mainScript.js"></script>

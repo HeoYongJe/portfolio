@@ -69,6 +69,10 @@ body section article {
     display: block;
 }
 
+h1{
+    display:none;
+}
+
 /* nav */
 #mainNav {
     margin-bottom: 80px;
@@ -203,6 +207,10 @@ body section article {
 
 .itemContent img{
     transition: 0.3s;
+    width: 100%;
+    display: block;
+    transition: 0.3s;
+    border-radius: 5px;
 }
 
 .boxItem .itemContent:hover img {
@@ -217,6 +225,8 @@ body section article {
     height: 100%;
     margin: 1.5%;
     box-shadow: 0 5px 15px 0 rgb(1 27 60 / 10%);
+    border:1px solid #f9f9f9;
+    border-radius: 5px;
 }
 
 .boxItem .itemContent a {
@@ -228,11 +238,6 @@ body section article {
     color: #111;
     transition: 0.2s;
     text-align: right;
-}
-
-.boxItem img {
-    width: 100%;
-    display: block;
 }
 
 .boxItem .boxText {
@@ -260,7 +265,7 @@ body section article {
 
 }
 .boxItem .boxText strong {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .boxItem .boxText p {

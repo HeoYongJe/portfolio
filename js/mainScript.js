@@ -3,15 +3,12 @@ const $fadeTop = document.querySelector('.fadeTop');
 
 const $contentFloat = document.querySelector('.contentFloat');
 const $itemFloat = document.querySelector('.itemFloat');
-const $figures = document.querySelectorAll('.figure');
-const $figureContent = document.querySelector('.figureContent');
 const $hoverImg = document.querySelector('.hoverImg');
-const $menuOut = document.querySelector('.menuOut');
-const $figcaption = document.getElementsByTagName('figcaption');
+const $boxItem = document.querySelector('.boxItem');
+const $boxText = document.querySelector('.boxText');
 
 const $closeBtn = document.getElementById('closeBtn');
 const $mobileBtn = document.getElementById('mobileBtn');
-const $mainMenu = document.getElementById('mainMenu');
 
 
     // for(let i = 0; i < $figures.length;++i) {
@@ -30,6 +27,13 @@ const $mainMenu = document.getElementById('mainMenu');
 //     figcaption.style.display = 'none';
 
 // });
+
+focusMethod = function getFocus() {
+    if($boxItem.focus()){
+        boxText.style.display = 'flex';
+        // mainMenu.classList.add('on');
+    }
+  }
 
 
 

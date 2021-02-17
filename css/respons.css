@@ -157,4 +157,12 @@
         border: 1px solid #eee;
         margin-bottom: -1px;
     }
+
+    .boxItem .boxText strong{
+        font-size:20px;
+    }
+    .boxItem .boxText p{
+        padding: 4px 0;
+        margin: 4px 0;
+    }
 }
