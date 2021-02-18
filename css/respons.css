@@ -73,12 +73,17 @@
 
     #mainNav div ul li {
         width: 100%;
-        padding: 0 50px;
+        /* padding: 0 50px; */
         float: none;
         background: #fff;
         border: 1px solid #eee;
         margin-bottom: -1px;
     }
+
+    #mainNav div ul li a{
+        padding:0 50px;
+    }
+
     #introPage {
         background: url(../img/intro3.png) no-repeat 15%;
     }

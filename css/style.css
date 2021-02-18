@@ -170,8 +170,8 @@ h1{
     background: none;
     border: 0;
     position: absolute;
-    bottom: 100px;
-    right: 5%;
+    bottom: 50px;
+    right: 30px;
     transform: translate(-50%, -50%);
 }
 
