@@ -9,6 +9,7 @@ const $boxText = document.querySelector('.boxText');
 
 const $closeBtn = document.getElementById('closeBtn');
 const $mobileBtn = document.getElementById('mobileBtn');
+const $contentBtn = document.querySelectorAll('contentBtn');
 
 
     // for(let i = 0; i < $figures.length;++i) {
@@ -37,16 +38,24 @@ focusMethod = function getFocus() {
 
 
 
-
 // 모바일 메뉴버튼
+
+$contentBtn.addEventListener('click', function (e) {
+    mainMenu.style.display = 'none';
+    mobileBtn.style.display = 'block';
+    closeBtn.style.display = 'none';
+});
+
 $mobileBtn.addEventListener('click', function (e) {
-    mainMenu.classList.add('on');
+    // mainMenu.classList.add('on');
+    mainMenu.style.display = 'block';
     mobileBtn.style.display = 'none';
     closeBtn.style.display = 'block';
 });
 
 $closeBtn.addEventListener('click', function (e) {
-    mainMenu.classList.remove('on');
+
+    mainMenu.style.display = 'none';
     mobileBtn.style.display = 'block';
     closeBtn.style.display = 'none';
 });
