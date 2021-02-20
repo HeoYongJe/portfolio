@@ -276,9 +276,8 @@ h1{
 }
 .boxItem .boxText p::before{
     content: '';
+    position:absolute;
     border-top:1px solid #999;
-    animation-duration: 1s;
-    animation-name: fadeTop;
 }
 
 .boxItem .boxText p {
@@ -292,9 +291,10 @@ h1{
 }
 .boxItem .boxText p::after{
     content: '';
+    position:absolute;
     border-bottom:1px solid #999;
-    animation-duration: 1s;
-    animation-name: fadeTop;
+    animation-duration: 0.5s;
+    animation-name: fadeBottom;
 }
 .boxItem .boxText span {
     font-size: 14px;

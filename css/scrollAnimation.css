@@ -45,15 +45,40 @@
     
   }
 
+  ..boxText p::before{
+    animation-name: fadeTop;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running; 
+  }
 
   @keyframes fadeTop {
+    0%{
+      top:50%;
+      width: 0%
+    }
+  
+    100% {
+      top:45%;
+      width: 100%;
+      
+    }
+  }
+
+  @keyframes fadeBottom {
     from {
-      top:0px;
+      bottom:50%;
+      left:0%;
       width: 0%
     }
   
     to {
-      top:20px;
+      bottom:40%;
+      left:-50%;
       width: 100%;
     }
   }
