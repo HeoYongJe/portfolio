@@ -44,3 +44,16 @@
     }
     
   }
+
+
+  @keyframes fadeTop {
+    from {
+      top:0px;
+      width: 0%
+    }
+  
+    to {
+      top:20px;
+      width: 100%;
+    }
+  }
