@@ -315,8 +315,8 @@ h1 {
 .boxItem .boxText p {
     padding: 8px 0;
     margin: 8px 0;
-    /* border-top: 1px solid #999;
-    border-bottom: 1px solid #999; */
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
     font-size: 15px;
     line-height: 20px;
     color: #666;

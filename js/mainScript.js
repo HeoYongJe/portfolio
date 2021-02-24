@@ -6,12 +6,13 @@ const $itemFloat = document.querySelector('.itemFloat');
 const $hoverImg = document.querySelector('.hoverImg');
 const $boxItem = document.querySelector('.boxItem');
 const $boxText = document.querySelector('.boxText');
+const $contentBtn = document.getElementsByClassName('contentBtn');
 
 const $mainMenu = document.getElementById('mainMenu');
 const $mainBtn = document.getElementById('mainBtn');
 const $closeBtn = document.getElementById('closeBtn');
 const $mobileBtn = document.getElementById('mobileBtn');
-const $contentBtn = document.querySelector('.contentBtn');
+
 
 
 // for(let i = 0; i < $figures.length;++i) {
@@ -43,15 +44,19 @@ $('.carousel').carousel()
 
 
 // 모바일 메뉴버튼
-for (let i = 0; i < $mainMenu.length; i++) {
-    $contentBtn.addEventListener('click', function () {
+
+for (let i = 0; i < $contentBtn.length; i++) {
+    
+    $contentBtn[i].addEventListener('click', function () {
         mainMenu.classList.remove('on');
         mobileBtn.style.display = 'block';
         closeBtn.style.display = 'none';
     });
+   
 }
-console.log($contentBtn)
-console.log($mainMenu)
+console.log($contentBtn.length) 
+console.log($mainMenu.length)
+
 
 $mobileBtn.addEventListener('click', function (e) {
     mainMenu.classList.add('on');
