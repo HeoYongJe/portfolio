@@ -2,9 +2,12 @@
     background: #f1f1f1;
     padding-top:60px;
 }
+#subIntroPage{
+    padding: 50px 0 150px 0;
+}
 
 #subIntroPage img {
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
     display: block;
 }
@@ -41,3 +44,37 @@
 }
 
 /* 캐러셀 */
+.carousel-inner > .item > img {
+
+    display: block;
+    
+    max-width: 100%;
+    
+    height: auto;
+    
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+    margin:0 auto;
+}
+.carousel-indicators{
+    bottom:-60px !important;
+}
+
+.carousel-indicators li {
+    position: relative;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 30px !important;
+    height: 3px !important;
+    margin-right: 3px !important;
+    margin-left: 3px !important;
+    text-indent: -999px;
+    background-color: rgba(255,255,255,.5) !important;
+    border:none !important;
+    margin:0 0.2% !important
+}
+
+.carousel-indicators li:hover, li:active{
+   background:rgba(255, 255, 255, 1) !important ; 
+}
