@@ -40,20 +40,4 @@
     background-size: cover;
 }
 
-.threeCulContent ul{
-    display:flex;
-    align-content: center;
-    justify-content: space-around;
-}
-.threeCulContent ul .culImg01{
-    position:relative;
-    left:200px;
-}
-.threeCulContent ul .culImg02{
-    z-index: 1;
-    position: relative;
-}
-.threeCulContent ul .culImg03{
-    position:relative;
-    right: 200px;
-}
+/* 캐러셀 */

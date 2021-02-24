@@ -38,7 +38,8 @@ const $contentBtn = document.querySelector('.contentBtn');
 //     }
 //   }
 
-
+// 캐러셀
+$('.carousel').carousel()
 
 
 // 모바일 메뉴버튼

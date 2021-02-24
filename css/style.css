@@ -298,7 +298,7 @@ h1 {
     display: none;
     justify-content: center;
     flex-direction: column;
-    padding: 5%;
+    padding: 5% 8%;
     z-index: 1;
 }
 
