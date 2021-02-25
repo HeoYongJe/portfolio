@@ -16,6 +16,11 @@ dd {
     list-style: none;
 }
 
+html body a{
+    color:#fff;
+    text-decoration: none;
+}
+
 #contactArea {
     /* background:url(../img/mainBack18.jpg)no-repeat; */
 }

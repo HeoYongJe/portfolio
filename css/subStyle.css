@@ -51,20 +51,37 @@
     color: #fff;
 }
 
+/* subList end */
+
 .threeCul {
     width: 100%;
     max-width: 100%;
 }
 
+/* background */
 #subContentArea .nikeCul {
     background: url(./../img/nike_back.jpg)no-repeat;
     height: 100%;
     background-size: cover;
 }
 
-/* 캐러셀 */
+#subContentArea .entCul {
+    background: url(./../img/ksg_back.jpg)no-repeat;
+    height: 100%;
+    background-size: cover;
+}
+
+/* background end */
+
+/* carousel */
 .carousel {
-    padding: 80px 0 80px 0;
+    padding: 100px 0 100px 0;
+}
+
+.carousel-inner>.item {
+    -webkit-transition: -webkit-transform .0s ease-in-out !important;
+    -o-transition: -o-transform .0s ease-in-out !important;
+    transition: transform .0s ease-in-out !important;
 }
 
 .carousel-inner>.item>img {
@@ -80,10 +97,6 @@
 .thumbnail>img {
     margin: 0 auto;
 }
-
-/* .carousel-indicators {
-    bottom: 40px !important;
-} */
 
 .carousel-indicators li {
     position: relative;
@@ -115,13 +128,29 @@ li:active {
     margin-right: 50% !important;
 }
 
-#subContentArea .nikeCul button {
+.carousel-control.left {
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .4) 0, rgba(0, 0, 0, .0001) 100%) !important;
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, .4) 0, rgba(0, 0, 0, .0001) 100%) !important;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .4)), to(rgba(0, 0, 0, .0001))) !important;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .4) 0, rgba(0, 0, 0, .0001) 100%) !important;
+}
+
+.carousel-control.right {
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .4) 100%) !important;
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .4) 100%) !important;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .4))) !important;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .4) 100%) !important;
+}
+
+/* carousel end */
+
+
+#subContentArea button {
     display: block;
     width: 140px;
     margin: 0 auto;
     padding: 8px;
     background: none;
-    color: #ddd;
     line-height: 22px;
     border: 1px solid #eee;
     outline: none;
@@ -129,6 +158,11 @@ li:active {
     margin-top: 20px;
 }
 
-#subContentArea .nikeCul button:hover {
+#subContentArea button a {
+    color: #ddd;
+}
+
+#subContentArea button a:hover {
     color: #fff;
+    text-decoration: none;
 }
