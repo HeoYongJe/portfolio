@@ -161,8 +161,7 @@ h1 {
     background: none;
     border: 0;
     position: absolute;
-    bottom: 50px;
-    right: 30px;
+    bottom: 100px;
     transform: translate(-50%, -50%);
 }
 
@@ -364,8 +363,17 @@ h1 {
 #footer {
     padding: 50px 0 100px 0;
     position: relative;
-    background: #0f4c8e;
+    background: #7d7d7d;
     color: #fff;
+}
+.scrollBtnBottom{
+    width: 100%;
+    display: block;
+}
+
+#footer .scrollBtnBottom .scrollAnimation{
+    bottom: 100px;
+    right: 2%;
 }
 
 /*

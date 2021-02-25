@@ -2,14 +2,25 @@
     #introPage {
         background-size: cover;
     }
+
+    .carousel-inner>.item>a>img,
+    .carousel-inner>.item>img,
+    .img-responsive,
+    .thumbnail a>img,
+    .thumbnail>img {
+        margin: 0 auto;
+        width: 50%;
+    }
 }
+
 /* max-width 1920 end */
 
 @media screen and (min-width: 1280px) {
-    #mobileBtn{
-        display:none;
+    #mobileBtn {
+        display: none;
     }
 }
+
 /* min-width 1280 end */
 
 @media screen and (max-width: 1280px) {
@@ -21,6 +32,7 @@
         font-size: 90px;
     }
 }
+
 /* max-width 1280 end */
 
 
@@ -32,11 +44,12 @@
         animation-name: fadeInAni;
         animation-duration: .8s;
         animation-timing-function: ease-out;
-      }
+    }
 
-      #mainMenu.off {
+    #mainMenu.off {
         visibility: hidden;
-      }
+    }
+
     /* mainMenu end  */
 
     #mobileBtn {
@@ -49,10 +62,12 @@
         padding: 0;
         background: rgba(255, 255, 255, 0);
     }
+
     #mobileBtn:hover,
     .menuBtn:focus {
         background: rgba(211, 211, 211, 0.4);
     }
+
     .btnTop,
     .btnMiddle,
     .btnBottom {
@@ -80,8 +95,8 @@
         margin-bottom: -1px;
     }
 
-    #mainNav div ul li a{
-        padding:0 50px;
+    #mainNav div ul li a {
+        padding: 0 50px;
     }
 
     #introPage {
@@ -99,7 +114,7 @@
     #itemArea .itemFloat {
         flex-direction: column;
         width: 50%;
-        margin:2% 1%;
+        margin: 2% 1%;
     }
 
     #itemArea h2 {
@@ -110,7 +125,41 @@
         margin: 2% 1%;
         overflow: hidden;
     }
+
+    /* subList */
+    .subList {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.3);
+        position: unset;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .subList ul {
+        display: flex;
+        width: 1000px;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+
+    .subList ul li {
+        margin: 0;
+    }
+
+    .subList ul li a {
+        text-decoration: none;
+        color: #ccc;
+        font-weight: 400;
+    }
+
+    .subList ul li a:hover {
+        color: #fff;
+    }
 }
+
 /* max-width 1024 end */
 
 
@@ -163,10 +212,11 @@
         margin-bottom: -1px;
     }
 
-    .boxItem .boxText strong{
-        font-size:20px;
+    .boxItem .boxText strong {
+        font-size: 20px;
     }
-    .boxItem .boxText p{
+
+    .boxItem .boxText p {
         padding: 4px 0;
         margin: 4px 0;
     }

@@ -17,7 +17,9 @@ const $mobileBtn = document.getElementById('mobileBtn');
 
 
 // 캐러셀
-// $('.carousel').carousel()
+$('.carousel').carousel({
+    number: 0
+  })
 
 
 // 모바일 메뉴버튼
@@ -36,14 +38,12 @@ console.log($contentBtn.length)
 
 $mobileBtn.addEventListener('click', function (e) {
     mainMenu.classList.add('on');
-    // mainMenu.style.display = 'block';
     mobileBtn.style.display = 'none';
     closeBtn.style.display = 'block';
 });
 
 $closeBtn.addEventListener('click', function (e) {
     mainMenu.classList.remove('on');
-    // mainMenu.style.display = 'none';
     mobileBtn.style.display = 'block';
     closeBtn.style.display = 'none';
 });
