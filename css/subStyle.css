@@ -1,5 +1,4 @@
 #subContentArea {
-    background: #f1f1f1;
     padding-top: 60px;
 }
 
@@ -59,6 +58,18 @@
 }
 
 /* background */
+.nikeBackground{
+    background:#f5f5f5;
+}
+
+.foodtalkBackground{
+    background:#f29200;
+}
+
+.entBackground{
+background:#9b9a6a;
+}
+
 #subContentArea .nikeCul {
     background: url(./../img/nike_back.jpg)no-repeat;
     height: 100%;
@@ -66,11 +77,16 @@
 }
 
 #subContentArea .entCul {
-    background: url(./../img/ksg_back.jpg)no-repeat;
+    background: url(./../img/ksg_back.jpg)no-repeat 50%;
     height: 100%;
     background-size: cover;
 }
 
+#subContentArea .foodtalkCul {
+    background: url(./../img/food_back.jpg)no-repeat 50%;
+    height: 100%;
+    background-size: cover;
+}
 /* background end */
 
 /* carousel */
@@ -152,17 +168,34 @@ li:active {
     padding: 8px;
     background: none;
     line-height: 22px;
-    border: 1px solid #eee;
+
     outline: none;
     border-radius: 3px;
     margin-top: 20px;
 }
 
-#subContentArea button a {
+#subContentArea .black{
+    border: 1px solid #eee;    
+}
+
+#subContentArea .black a{
     color: #ddd;
 }
 
-#subContentArea button a:hover {
+#subContentArea .black a:hover {
     color: #fff;
+    text-decoration: none;
+}
+
+#subContentArea .white {
+    border: 1px solid #333;  
+}
+
+#subContentArea .white a{
+    color: #666;
+}
+
+#subContentArea .white a:hover {
+    color: #111;
     text-decoration: none;
 }
