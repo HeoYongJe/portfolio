@@ -167,7 +167,9 @@ h1 {
     border: 0;
     position: absolute;
     bottom: 100px;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
+    width: 100%;
+    display: block;
 }
 
 #scrollGideBtn img {
@@ -374,6 +376,7 @@ h1 {
 #footer .scrollBtnBottom .scrollAnimation {
     bottom: 100px;
     right: 2%;
+    text-align: right;
 }
 
 /*
