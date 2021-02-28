@@ -56,11 +56,12 @@
         display: block;
         position: absolute;
         top: 0;
-        right: 0;
+        right: 1.5%;
         width: 80px;
         height: 80px;
         padding: 0;
         background: rgba(255, 255, 255, 0);
+        border:0;
     }
 
     #mobileBtn:hover,

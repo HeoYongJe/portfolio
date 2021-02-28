@@ -16,19 +16,16 @@ dd {
     list-style: none;
 }
 
-html body a{
-    color:#fff;
+html body a {
+    color: #fff;
     text-decoration: none;
-}
-
-#contactArea {
-    /* background:url(../img/mainBack18.jpg)no-repeat; */
 }
 
 #allArea {
     margin: 0 auto;
     width: 100%;
 }
+
 
 /* common */
 .container-fluid {
@@ -69,6 +66,7 @@ h1 {
     display: none;
 }
 
+
 /* nav */
 #mainNav {
     margin-bottom: 80px;
@@ -95,6 +93,7 @@ h1 {
     height: 80px;
     line-height: 80px;
     text-align: center;
+    background:none;
 }
 
 #mainNav div ul li a {
@@ -112,10 +111,11 @@ h1 {
     display: none;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 1.5%;
     width: 80px;
     height: 80px;
     background: rgba(33, 55, 120, 0);
+    border:0;
 }
 
 .btnRight,
@@ -178,6 +178,7 @@ h1 {
     width: 50px !important;
     transform: rotate(180deg);
 }
+
 
 /* 아이템 부분 */
 #contentArea {
@@ -336,6 +337,7 @@ h1 {
     margin: 15px 0;
 }
 
+
 /* #contactArea */
 #contactArea dl {
     display: flex;
@@ -358,17 +360,18 @@ h1 {
 
 /* #footer */
 #footer {
-    padding: 50px 0 100px 0;
+    padding: 50px 50px 100px 50px;
     position: relative;
     background: #7d7d7d;
     color: #fff;
 }
-.scrollBtnBottom{
+
+.scrollBtnBottom {
     width: 100%;
     display: block;
 }
 
-#footer .scrollBtnBottom .scrollAnimation{
+#footer .scrollBtnBottom .scrollAnimation {
     bottom: 100px;
     right: 2%;
 }

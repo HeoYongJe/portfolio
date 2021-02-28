@@ -38,6 +38,7 @@
 
 .subList ul li {
     margin: 30px 0;
+    background:none !important;
 }
 
 .subList ul li a {
