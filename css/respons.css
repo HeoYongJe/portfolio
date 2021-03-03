@@ -25,12 +25,12 @@
 
 @media screen and (max-width: 1280px) {
     #introPage {
-        background: url(../img/intro3.png) no-repeat 10%;
+        background: url(../img/intro7.png) no-repeat 10%;
     }
 
-    #introPage h2 {
+    /* #introPage h2 {
         font-size: 90px;
-    }
+    } */
 }
 
 /* max-width 1280 end */
@@ -101,11 +101,26 @@
     }
 
     #introPage {
-        background: url(../img/intro7.png) no-repeat 15%;
+        /* background: url(../img/intro7.png) no-repeat 15%; */
+        background: #e9e6e2;
+        position: relative;
+        height: 70vh;
     }
 
     #introPage h2 {
-        font-size: 85px;
+        font-size: 80px;
+        position: absolute;
+        top: 45%;
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: -2px;
+        font-weight: bold;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        line-height: 80px;
+        right:0;
+        width:100%;
+
     }
 
     #itemArea {
@@ -165,6 +180,10 @@
 
 
 @media screen and (max-width: 767px) {
+    #introPage h2 {
+        font-size:60px;
+        line-height:60px;
+    }
     #mobileBtn {
         position: absolute;
         top: 0;
