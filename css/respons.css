@@ -28,12 +28,18 @@
         background: url(../img/intro7.png) no-repeat 10%;
     }
 
-    /* #introPage h2 {
-        font-size: 90px;
-    } */
 }
 
 /* max-width 1280 end */
+
+@media screen and (max-width: 1200px) {
+    .itemFloat{
+        justify-content: center;
+        padding:0;
+    }
+
+
+}
 
 
 @media screen and (max-width: 1024px) {
@@ -125,12 +131,11 @@
 
     #itemArea {
         display: flex;
+        flex-direction: column;
     }
 
     #itemArea .itemFloat {
-        flex-direction: column;
-        width: 50%;
-        margin: 2% 1%;
+        width: 100%;
     }
 
     #itemArea h2 {
@@ -138,7 +143,6 @@
     }
 
     #itemArea .boxItem {
-        margin: 2% 1%;
         overflow: hidden;
     }
 
@@ -230,6 +234,23 @@
         background: #fff;
         border: 1px solid #eee;
         margin-bottom: -1px;
+    }
+
+    #itemArea{
+        display: block;
+    }
+    
+    #itemArea .itemFloat{
+        display:block;
+        width:50%;
+        float:left;
+        padding:0;
+    }
+
+    #itemArea .boxItem{
+        float:left;
+        width: auto;
+        margin: 2%;
     }
 
     .boxItem .boxText strong {

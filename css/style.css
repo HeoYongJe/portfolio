@@ -111,7 +111,7 @@ h1 {
     display: none;
     position: absolute;
     top: 0;
-    right: 1.5%;
+    right: 0;
     width: 80px;
     height: 80px;
     background: rgba(33, 55, 120, 0);
@@ -199,7 +199,7 @@ h1 {
 .itemFloat {
     overflow: hidden;
     display: flex;
-    justify-content: center;
+    padding:0% 6%;
     align-items: center;
 }
 
