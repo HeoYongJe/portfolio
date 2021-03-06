@@ -1,0 +1,205 @@
+@charset "utf-8";
+@import url(common.css);
+
+#wrap{
+	width:100%;
+	display:block;
+}
+#wrap{
+	width:100%;
+	display:block;
+}
+#header{
+	background-color:#000000;
+	width:100%;
+	top:0;
+	overflow:hidden;
+	position:fixed;
+	z-index:1;
+}
+#header .header-area{
+	width:1280px;
+	height:60px;	
+	margin:0 auto;
+}
+#header .logo{
+	float:left;
+	margin-left:15px;
+}
+#header .logo img{
+	padding-top:3px;	
+}
+#header .main-nav{
+	font-size:15px;
+	float:right;
+	margin-right:15px;
+}
+.main-nav ul li{
+	display:inline-block;
+	line-height:62px;
+	padding-left:45px;
+}
+.main-nav ul li a{
+	color:#f9f9f9;
+	font-weight:bold;
+	position:relative;
+}
+.main-nav ul li a:hover{
+	color:#b72a2a;
+	transition:0.3s;
+}
+#container{
+	width:100%;
+	background-color:#e5e5e5;
+	
+}
+#container .container-area{
+	margin-top:63px;
+}
+#container .event-form{
+	width:900px;
+	background-color:#090909;
+	margin:0 auto;
+	text-align:left;
+	color:#f9f9f9;
+	font-size:16px;
+	font-family:"나눔고딕",dotum,Helvetica,sans-serif;
+	padding-bottom:80px;
+}
+#container .event-form h2{
+	width: 200px;
+	margin: 0 auto;
+	padding-top: 60px;	
+	padding-bottom:30px;
+}
+.event-form form{
+	position:relative;
+	bottom:-100px;
+	opacity:0;
+}
+.event-form fieldset{
+	margin:0 50px;
+	padding:30px 0 30px 0;	
+	border:1px solid #e8e8e8;
+}
+.event-form fieldset table{
+	width:700px;
+	margin:0 auto;	
+}
+.event-form form span{
+	font-size:14px;	
+}
+.event-form form span .button{
+	background:#ffffff;	
+	color:#333333;
+	font-size:12px;
+}
+.event-form form .check-text01{
+	font-size:12px;	
+}
+.event-form form tr{
+	line-height:55px;
+}
+.event-form form .birth select{
+	color:#ffffff;
+	background:none;
+	border:2px solid #b6d440;	
+	padding: 7px 7px;
+}
+.event-form form .birth select option{
+	background-color:#090909;
+	line-height:20px;
+}
+.event-form form .birth .input-box{
+	width:50px;
+}
+.event-form form .e-mail .input-box{
+	width:300px;	
+}
+.event-form .first-text{
+	width:100px;
+	font-weight: bold;	
+}
+.event-form .birth .two-text{
+	padding-left:10px;
+}
+.event-form form tr input{
+	text-align:center;
+	border:2px solid #b6d440;
+	color:#f9f9f9;
+	background:none;	
+	font-weight:400;
+	font-size:16px;
+	padding:2px 5px;
+}
+.event-form form tr .input-box{
+	width:100px;
+	height:25px;
+	margin:0 10px;
+}
+.event-form form tr .check-box{
+	margin-left:10px;	
+	border:none!important;
+}
+.event-form .last-button{
+	background: url(../img/sub-event/event-s_bar.png) no-repeat 0 0;
+	width: 250px;
+	height: 70px;
+	margin: 0 auto;
+	position:relative;	
+	margin-top:60px;
+}
+.event-form .last-button p a{
+	position: absolute;
+	color: #333333;
+	font-size: 20px;
+	font-weight: bold;
+	top: 25px;
+	left: 64px;
+}
+.event-form .last-button p a:hover{
+	color:#ffffff;
+	transition:0.4s;	
+}
+#footer{
+	background-color:#222222;
+	padding-bottom:100px;
+	overflow:hidden;
+}
+#footer .footer-area{
+	width:1000px;
+	margin:0 auto;
+}
+.footer-area .footer-left{
+	float:left;
+	position:relative;
+	top:50px;
+}
+.footer-area .footer-center{
+	float:left;
+	position:relative;
+	top:50px;
+	left:295px;
+}
+.footer-area .footer-right{
+	float:right;
+	position:relative;
+	top:50px;
+	right:8px;
+}
+.footer-right ul li{
+	display:inline-block;
+	padding-left:19px;
+}
+.footer-right p{
+	padding-top:15px;
+	padding-right:20px;
+}
+.footer-right p a{
+	font-size:14px;
+	color:#b7b7b7;
+}
+.footer-right p a:hover{
+	color:#b72a2a;
+	transition:0.3s;	
+}
