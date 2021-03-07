@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="./../css/subStyle.css">
+    <link rel="stylesheet" href="./../css/respons.css">
+    <link rel="stylesheet" href="./../css/scrollAnimation.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link href="./../css/bootstrap.min.css" rel="stylesheet">
+    <title>CNC미앤유</title>
+</head>
+
+<body>
+    <!--  id="navbar" class="collapse navbar-collapse" -->
+    <div class="container-fluid">
+        <section id="mainNav">
+            <div>
+                <ul id="mainMenu" class="clearfix">
+                    <li data-menuanchor="secondPage"><a href="http://www.yjportfolio.co.kr/#itemArea">PORTFOLIO</a></li>
+                    <li data-menuanchor="thirdPage"><a href="http://www.yjportfolio.co.kr/#footer">CONTACT</a></li>
+                </ul>
+                <button id="mobileBtn" type="button" class="menuBtn" aria-label="메뉴 열기">
+                    <span class="btnTop"></span>
+                    <span class="btnMiddle"></span>
+                    <span class="btnBottom"></span>
+                </button>
+                <button id="closeBtn" type="button" class="menuClose" aria-label="메뉴 닫기">
+                    <span class="btnRight"></span>
+                    <span class="btnLeft"></span>
+                </button>
+            </div>
+        </section>
+        <section id="subContentArea" class="entBackground">
+            <article id="subIntroPage">
+                <div class="contentSet">
+                    <img src="./../img/ksg_imac.png" alt="아이맥속의 사이트 모습">
+                    <h1>ENT</h1>
+                    <div class="scrollBtnTop">
+                        <a data-menuanchor="secondPage" id="scrollGideBtn" class="scrollAnimation" href="#carousel-example-generic"><img
+                                src="./../img/arrowGide.png" alt="스크롤가이드화살표"></a>
+                    </div>
+                </div>
+            </article>
+            <article class="threeCul entCul">
+                <div class="subList">
+                    <ul>
+                        <li><a href="../nike/index.html">NIKE</a></li>
+                        <li><a href="../ent24/index.html">ENT24</a></li>
+                        <li><a href="../foodtalk/index.html">FOODTALK</a></li>
+                        <li><a href="#">CNC미앤유</a></li>
+                        <li><a href="#">MARVEL</a></li>
+                    </ul>
+                </div>
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="./../img/entDetail01.png" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="./../img/entDetail02.png" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="./../img/entDetail03.png" alt="...">
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    <button class="white"><a href="http://www.ent24.co.kr/" target="_blank">사이트 바로가기</a></button>
+                </div>
+                
+            </article>
+        </section>
+        <section id="footer" class="clearFix">
+            <article id="contactArea" data-menuanchor="page02">
+                <div class="contentSet">
+                    <h2>CONTACT</h2>
+                    <dl>
+                        <dt>NAME</dt>
+                        <dd>HEO YONG JE</dd>
+                    </dl>
+                    <dl>
+                        <dt>PHONE</dt>
+                        <dd>010.3164.7490</dd>
+                    </dl>
+                    <dl>
+                        <dt>MAIL</dt>
+                        <dd>hyj.campus@gmail.com</dd>
+                    </dl>
+                    <dl>
+                        <dt>GIT</dt>
+                        <dd>https://github.com/HeoYongJe</dd>
+                    </dl>
+                </div>
+                <div class="scrollBtnBottom">
+                    <a data-menuanchor="secondPage" id="scrollGideBtn" class="scrollAnimation" href="#mainNav"><img
+                            src="./../img/arrowGide.png" alt="스크롤가이드화살표"></a>
+                </div>
+            </article>
+        </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="./../js/bootstrap.min.js"></script>
+    <script src="./../js/mainScript.js"></script>
+
+</body>
+
+</html>
