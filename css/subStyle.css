@@ -68,7 +68,11 @@
 }
 
 .entBackground{
-background:#9b9a6a;
+    background:#9b9a6a;
+}
+
+.cncBackground{
+    background:#aa4171;
 }
 
 #subContentArea .nikeCul {
@@ -88,6 +92,13 @@ background:#9b9a6a;
     height: 100%;
     background-size: cover;
 }
+
+#subContentArea .cncCul {
+    background: url(./../img/cnc_back.jpg)no-repeat 50%;
+    height: 100%;
+    background-size: cover;
+}
+
 /* background end */
 
 /* carousel */
