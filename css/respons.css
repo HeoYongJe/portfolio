@@ -261,4 +261,14 @@
         padding: 4px 0;
         margin: 4px 0;
     }
+
+    .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev{
+        top:8% !important;
+    }
+    .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev{
+        left:200% !important;
+    }
+    .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next{
+        right:200% !important;
+    }
 }

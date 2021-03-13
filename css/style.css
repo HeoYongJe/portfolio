@@ -271,30 +271,36 @@ h1 {
 }
 
 .boxItem .itemContent a {
-    display: block;
+    display: inline-block;
     text-decoration: none;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
     color: #111;
     transition: 0.2s;
+    float:right;
     text-align: right;
+    /* position: absolute;
+    width: 40%;
+    right: 0;
+    bottom: 25%; */
 }
 
 .boxItem .boxText {
     position: absolute;
     top: 50%;
-    transition: 0.3s;
-    transform: translate(-50%, -50%);
     left: 50%;
     width: 100%;
+    display: none;
+    transition: 0.3s;
+    transform: translate(-50%, -50%);
     text-decoration: none;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
     height: 100%;
     margin: 0;
-    display: none;
+
     justify-content: center;
     flex-direction: column;
     padding: 5% 8%;
@@ -327,11 +333,13 @@ h1 {
     display:block;
 }
 
-.boxItem .boxText span:hover {
+.boxItem .boxText a span{
+
+}
+.boxItem .boxText a span:hover {
     transition: 0.3s;
     color: #ff9600;
     /* 0c6cd3 */
-    font-weight: 600;
 }
 
 .col-xs-6 {
