@@ -154,6 +154,9 @@ h1 {
     text-transform: uppercase;
     letter-spacing: -2px;
     font-weight: bold;
+    background: linear-gradient(to right, #333, #666); /* 8ca6ce */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .scrollBtnTop {
@@ -271,19 +274,17 @@ h1 {
 }
 
 .boxItem .itemContent a {
-    display: inline-block;
     text-decoration: none;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
     color: #111;
     transition: 0.2s;
-    float:right;
     text-align: right;
-    /* position: absolute;
-    width: 40%;
+    position: absolute;
     right: 0;
-    bottom: 25%; */
+    bottom: 8%;
+    padding: 5% 8%;
 }
 
 .boxItem .boxText {
