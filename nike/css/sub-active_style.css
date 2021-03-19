@@ -1,60 +1,3 @@
-@charset "utf-8";
-@import url(common.css);
-
-#wrap{
-	width:100%;
-	display:block;
-}
-#wrap{
-	width:100%;
-	display:block;
-}
-#header{
-	background-color:#000000;
-	width:100%;
-	top:0;
-	overflow:hidden;
-	position:fixed;
-	z-index:1;
-}
-#header .header-area{
-	width:1280px;
-	height:60px;	
-	margin:0 auto;
-}
-#header .logo{
-	float:left;
-	margin-left:15px;
-}
-#header .logo img{
-	padding-top:3px;	
-}
-#header .main-nav{
-	font-size:15px;
-	float:right;
-	margin-right:15px;
-}
-.main-nav ul li{
-	display:inline-block;
-	line-height:62px;
-	padding-left:45px;
-}
-.main-nav ul li a{
-	color:#f9f9f9;
-	font-weight:bold;
-	position:relative;
-}
-.main-nav ul li a:hover{
-	color:#b72a2a;
-	-webkit-transition: 0.3s;
-	-moz-transition:0.3s ;
-	-ms-transition: 0.3s;
-	-o-transition:0.3s ;
-	transition:0.3s ;
-}
-#container{
-	margin-top:60px;
-}
 #container .main-img img{
 	width:100%;
 	height:680px;
@@ -62,8 +5,7 @@
 #container .main-text{
 	width:100%;
 	background-color:#e3e3e3;
-	padding-bottom:90px;
-	padding-top:100px;
+	padding:180px 0 200px 0;
 }
 .main-text h2{
 	position:relative;

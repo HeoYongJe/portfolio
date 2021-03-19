@@ -154,7 +154,7 @@ h1 {
     text-transform: uppercase;
     letter-spacing: -2px;
     font-weight: bold;
-    background: linear-gradient(to right, #333, #666); /* 8ca6ce */
+    background: linear-gradient(to right, #444, #9e7e5e);; /* 8ca6ce */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

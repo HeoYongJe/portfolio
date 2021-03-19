@@ -1,60 +1,6 @@
-@charset "utf-8";
-@import url(common.css);
-
-#wrap{
-	width:100%;
-	display:block;
-}
-#wrap{
-	width:100%;
-	display:block;
-}
-#header{
-	background-color:#000000;
-	width:100%;
-	top:0;
-	overflow:hidden;
-	position:fixed;
-	z-index:1;
-}
-#header .header-area{
-	width:1280px;
-	height:60px;	
-	margin:0 auto;
-}
-#header .logo{
-	float:left;
-	margin-left:15px;
-}
-#header .logo img{
-	padding-top:3px;	
-}
-#header .main-nav{
-	font-size:15px;
-	float:right;
-	margin-right:15px;
-}
-.main-nav ul li{
-	display:inline-block;
-	line-height:62px;
-	padding-left:45px;
-}
-.main-nav ul li a{
-	color:#f9f9f9;
-	font-weight:bold;
-	position:relative;
-}
-.main-nav ul li a:hover{
-	color:#b72a2a;
-	transition:0.3s;
-}
-#container{
-	width:100%;
-	background-color:#e5e5e5;
-	
-}
-#container .container-area{
-	margin-top:63px;
+.event-area{
+	padding: 180px 0 200px 0;
+    background: #e5e5e5;
 }
 #container .event-form{
 	width:900px;
@@ -64,7 +10,8 @@
 	color:#f9f9f9;
 	font-size:16px;
 	font-family:"나눔고딕",dotum,Helvetica,sans-serif;
-	padding-bottom:80px;
+	padding-bottom:80px; 
+
 }
 #container .event-form h2{
 	width: 200px;
@@ -81,6 +28,7 @@
 	margin:0 50px;
 	padding:30px 0 30px 0;	
 	border:1px solid #e8e8e8;
+	border-radius: 5px;
 }
 .event-form fieldset table{
 	width:700px;
@@ -93,6 +41,8 @@
 	background:#ffffff;	
 	color:#333333;
 	font-size:12px;
+	height:31px;
+	border:0;
 }
 .event-form form .check-text01{
 	font-size:12px;	
@@ -125,7 +75,8 @@
 }
 .event-form form tr input{
 	text-align:center;
-	border:2px solid #b6d440;
+	border:1px solid #b6d440;
+	border-radius: 5px;
 	color:#f9f9f9;
 	background:none;	
 	font-weight:400;
