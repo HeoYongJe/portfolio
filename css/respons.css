@@ -271,4 +271,7 @@
     .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next{
         right:200% !important;
     }
+    #scrollGideBtn img{
+        width:30px !important;
+    }
 }
