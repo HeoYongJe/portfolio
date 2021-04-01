@@ -33,9 +33,9 @@
 /* max-width 1280 end */
 
 @media screen and (max-width: 1200px) {
-    .itemFloat{
+    .itemFloat {
         justify-content: center;
-        padding:0;
+        padding: 0;
     }
 
 
@@ -67,7 +67,7 @@
         height: 80px;
         padding: 0;
         background: rgba(255, 255, 255, 0);
-        border:0;
+        border: 0;
     }
 
     #mobileBtn:hover,
@@ -122,10 +122,10 @@
         letter-spacing: -2px;
         font-weight: bold;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         line-height: 80px;
-        right:0;
-        width:100%;
+        right: 0;
+        width: 100%;
 
     }
 
@@ -185,9 +185,10 @@
 
 @media screen and (max-width: 767px) {
     #introPage h2 {
-        font-size:60px;
-        line-height:60px;
+        font-size: 60px;
+        line-height: 60px;
     }
+
     #mobileBtn {
         position: absolute;
         top: 0;
@@ -236,21 +237,32 @@
         margin-bottom: -1px;
     }
 
-    #itemArea{
+    #itemArea {
         display: block;
-    }
-    
-    #itemArea .itemFloat{
-        display:block;
-        width:50%;
-        float:left;
-        padding:0;
+        padding: 80px 0;
     }
 
-    #itemArea .boxItem{
-        float:left;
+    #itemArea .itemFloat {
+        /* display: block;
+        width: 50%;
+        float: left;
+        padding: 0; 기존 */
+
+        display: block;
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    #itemArea .boxItem {
+        /* float: left;
         width: auto;
-        margin: 2%;
+        margin: 2%; 기존 */
+
+        float: none;
+        width: 80%;
+        margin: 0 auto 5% auto;
     }
 
     .boxItem .boxText strong {
@@ -262,16 +274,24 @@
         margin: 4px 0;
     }
 
-    .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev{
-        top:8% !important;
+    .carousel-control .glyphicon-chevron-left,
+    .carousel-control .glyphicon-chevron-right,
+    .carousel-control .icon-next,
+    .carousel-control .icon-prev {
+        top: 8% !important;
     }
-    .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev{
-        left:200% !important;
+
+    .carousel-control .glyphicon-chevron-left,
+    .carousel-control .icon-prev {
+        left: 200% !important;
     }
-    .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next{
-        right:200% !important;
+
+    .carousel-control .glyphicon-chevron-right,
+    .carousel-control .icon-next {
+        right: 200% !important;
     }
-    #scrollGideBtn img{
-        width:30px !important;
+
+    #scrollGideBtn img {
+        width: 20px !important;
     }
 }
