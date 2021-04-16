@@ -75,6 +75,10 @@
     background:#aa4171;
 }
 
+.marvelBackground{
+    background:#333;
+}
+
 #subContentArea .nikeCul {
     background: url(./../img/nike_back.jpg)no-repeat;
     height: 100%;
@@ -99,6 +103,11 @@
     background-size: cover;
 }
 
+#subContentArea .marvelCul {
+    background: url(./../img/marvel_back.jpg)no-repeat 50%;
+    height: 100%;
+    background-size: cover;
+}
 /* background end */
 
 /* carousel */
