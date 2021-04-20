@@ -1,7 +1,4 @@
 // setbutton class
-const $fadeTop = document.querySelector('.fadeTop');
-
-const $contentFloat = document.querySelector('.contentFloat');
 const $itemFloat = document.querySelector('.itemFloat');
 const $hoverImg = document.querySelector('.hoverImg');
 const $boxItem = document.querySelector('.boxItem');

@@ -93,7 +93,7 @@ h1 {
     height: 80px;
     line-height: 80px;
     text-align: center;
-    background:none;
+    background: none;
 }
 
 #mainNav div ul li a {
@@ -115,7 +115,7 @@ h1 {
     width: 80px;
     height: 80px;
     background: rgba(33, 55, 120, 0);
-    border:0;
+    border: 0;
 }
 
 .btnRight,
@@ -154,9 +154,12 @@ h1 {
     text-transform: uppercase;
     letter-spacing: -2px;
     font-weight: bold;
-    background: linear-gradient(to right, #444, #9e7e5e);; /* 8ca6ce */
+    color: #928076;
+    /*
+    background: linear-gradient(to right, #9e7e5e, #333);; /* 8ca6ce 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    */
 }
 
 .scrollBtnTop {
@@ -170,17 +173,20 @@ h1 {
     border: 0;
     position: absolute;
     bottom: 100px;
-    /* transform: translate(-50%, -50%); */
-    width: 100%;
+    transform: translate(-50%, -50%);
+    width: 50px;
     display: block;
+    margin: 0 auto;
+    height: 50px;
+    left: 50%;
 }
 
 #scrollGideBtn img {
     width: 50px !important;
 }
 
-.scrollBtnBottom img {
-    width: 50px !important;
+#footer .scrollBtnBottom img {
+    width: 40px !important;
     transform: rotate(180deg);
 }
 
@@ -203,7 +209,7 @@ h1 {
 .itemFloat {
     overflow: hidden;
     display: flex;
-    padding:0% 6%;
+    padding: 0% 6%;
     align-items: center;
 }
 
@@ -332,12 +338,11 @@ h1 {
 .boxItem .boxText span {
     font-size: 14px;
     transition: 0.3s;
-    display:block;
+    display: block;
 }
 
-.boxItem .boxText a span{
+.boxItem .boxText a span {}
 
-}
 .boxItem .boxText a span:hover {
     transition: 0.3s;
     color: #ff9600;
@@ -385,7 +390,7 @@ h1 {
 
 #footer .scrollBtnBottom .scrollAnimation {
     bottom: 100px;
-    right: 2%;
+    right: -41%;
     text-align: right;
 }
 

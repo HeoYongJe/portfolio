@@ -182,7 +182,7 @@ li:active {
 /* carousel end */
 
 
-#subContentArea button {
+#subContentArea .siteBtn {
     display: block;
     width: 140px;
     margin: 0 auto;
@@ -193,6 +193,11 @@ li:active {
     outline: none;
     border-radius: 3px;
     margin-top: 20px;
+}
+
+#subContentArea .siteBtn a{
+    display:block;
+    text-align: center;
 }
 
 #subContentArea .black{

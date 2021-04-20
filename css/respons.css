@@ -1,4 +1,4 @@
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1921px) {
     #introPage {
         background-size: cover;
     }
@@ -9,12 +9,20 @@
     .thumbnail a>img,
     .thumbnail>img {
         margin: 0 auto;
-        width: 50%;
+        width: 70%;
     }
 }
 
 /* max-width 1920 end */
 
+
+@media screen and (max-width: 1920px) {
+    .carousel-inner>.item>img {
+        width:55%;
+    }
+}
+
+.carousel-inner>.item>img
 @media screen and (min-width: 1280px) {
     #mobileBtn {
         display: none;
