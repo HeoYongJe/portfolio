@@ -22,7 +22,13 @@
     }
 }
 
-.carousel-inner>.item>img
+@media screen and (max-width: 1680px) {
+    #subIntroPage img{
+        width:60%;
+    }
+}
+
+
 @media screen and (min-width: 1280px) {
     #mobileBtn {
         display: none;
@@ -34,6 +40,10 @@
 @media screen and (max-width: 1280px) {
     #introPage {
         background: url(../img/intro7.png) no-repeat 10%;
+    }
+
+    #subIntroPage img{
+        width:50%;
     }
 
 }
