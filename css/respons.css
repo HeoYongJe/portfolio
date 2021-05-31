@@ -31,7 +31,7 @@
 
 @media screen and (min-width: 1280px) {
     #mobileBtn {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -80,7 +80,7 @@
         display: block;
         position: absolute;
         top: 0;
-        right: 1.5%;
+        right: 0;
         width: 80px;
         height: 80px;
         padding: 0;
@@ -145,6 +145,10 @@
         right: 0;
         width: 100%;
 
+    }
+
+    #subIntroPage img{
+        width:80%;
     }
 
     #itemArea {
