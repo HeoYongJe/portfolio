@@ -1,5 +1,5 @@
 .event-area{
-	padding: 180px 0 200px 0;
+	padding: 100px 0 200px 0;
     background: #e5e5e5;
 }
 #container .event-form{
@@ -13,11 +13,35 @@
 	padding-bottom:80px; 
 
 }
-#container .event-form h2{
-	width: 200px;
-	margin: 0 auto;
-	padding-top: 60px;	
-	padding-bottom:30px;
+#container .event-area h2{
+	position: relative;
+    font-size: 30px;
+    color: #333333;
+    font-weight: bold;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+}
+
+#container .event-area h2::before{
+	content: "";
+    position: absolute;
+    bottom: 10%;
+    left: 49.3%;
+    width: 80px;
+    margin: 0 auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform:translateX(-50%) ;
+    -o-transform: translateX(-50%);
+    transform:translateX(-50%) ;
+    border: solid #333333;
+    border-width: 2px;
+    box-sizing: border-box;
+}
+
+#container .event-form h3{
+	padding:60px 0 30px 0;
+	text-align: center;
 }
 .event-form form{
 	position:relative;
@@ -53,8 +77,9 @@
 .event-form form .birth select{
 	color:#ffffff;
 	background:none;
-	border:2px solid #b6d440;	
-	padding: 7px 7px;
+	border: 1px solid #b6d440;
+    padding: 6px 7px;
+    border-radius: 5px;
 }
 .event-form form .birth select option{
 	background-color:#090909;
