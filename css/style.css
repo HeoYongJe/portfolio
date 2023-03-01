@@ -16,6 +16,11 @@ dd {
     list-style: none;
 }
 
+li:active{
+    background-color: transparent !important;
+    background:none !important;
+}
+
 html body a {
     color: #fff;
     text-decoration: none;
@@ -69,16 +74,16 @@ h1 {
 
 /* nav */
 #mainNav {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 #mainNav div {
     width: 100%;
-    background: #f9f9f9;
+    background: #000;
     position: fixed;
     top: 0;
     z-index: 9999;
-    height: 80px;
+    height: 60px;
 }
 
 #mainNav div ul {
@@ -90,17 +95,30 @@ h1 {
 #mainNav div ul li {
     float: left;
     width: 150px;
-    height: 80px;
-    line-height: 80px;
+    height: 60px;
+    line-height: 60px;
     text-align: center;
     background: none;
+}
+#mainNav div ul li:active,:focus{
+    background:none;
 }
 
 #mainNav div ul li a {
     display: block;
     width: 100%;
     text-decoration: none;
-    color: #0f4c8e;
+    color: #fff;
+    transition: .2s;
+    background:none;
+}
+
+#mainNav div ul li a:hover{
+    color:#F2AA4C;
+    transition: .2s;
+}
+#mainNav div ul li a:active{
+    background:none;
 }
 
 #mobileBtn {
@@ -112,8 +130,8 @@ h1 {
     position: absolute;
     top: 0;
     right: 0;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     background: rgba(33, 55, 120, 0);
     border: 0;
 }
@@ -138,28 +156,46 @@ h1 {
 
 /* #introPage */
 #introPage {
-    background: url(../img/intro7.png) no-repeat;
-    background-size: cover;
+    /* background: url(../img/intro7.png) no-repeat; */
+    /* background-size: cover; */
     height: 92vh;
     max-width: 100%;
     position: relative;
+    background-color:#000; /*101820*/
 }
 
 #introPage h2 {
     position: absolute;
-    right: 5%;
-    top: 40%;
-    font-size: 100px;
+    left:51%;
+    top: 63%;
+    font-size: 2em;
     display: block;
     text-transform: uppercase;
-    letter-spacing: -2px;
+    letter-spacing: 60px;
     font-weight: bold;
-    color: #928076;
+    color: #F2AA4C;
+    transform:translate(-50%, -50%);
+    background: linear-gradient(to right, #e6dabf, #f2aa4c);
+    -webkit-background-clip: text;
+
     /*
     background: linear-gradient(to right, #9e7e5e, #333);; /* 8ca6ce 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     */
+}
+
+#introPage p{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+#introPage p img{
+    display: block;
+    width:80%;
+    margin:0 auto;
 }
 
 .scrollBtnTop {
@@ -193,7 +229,7 @@ h1 {
 
 /* 아이템 부분 */
 #contentArea {
-    background: #f9f9f9;
+    background: #f5f5f5;
 }
 
 #itemArea {
@@ -233,7 +269,7 @@ h1 {
     width: 100%;
     height: 100%;
     margin: 1.1%;
-    box-shadow: 0 5px 8px 0 rgb(1 27 60 / 10%);
+    box-shadow: 0 5px 8px 0 rgb(1 27 60 / 15%);
     border: 1px solid #eee;
     border-radius: 5px;
     outline: #f9f9f9;
@@ -245,7 +281,7 @@ h1 {
     position: absolute;
     width: 99.8%;
     height: 1.5px;
-    background: #4d8ed4;
+    background: #F2AA4C;
     animation: animate 3s linear infinite;
 }
 
@@ -379,7 +415,7 @@ h1 {
 #footer {
     padding: 50px 50px 100px 50px;
     position: relative;
-    background: #333;
+    background: #000;
     color: #fff;
 }
 

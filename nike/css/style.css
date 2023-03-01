@@ -99,7 +99,10 @@ body{}
 	height:100%;	
 	}	
 #wrap .bx-controls{
-	display:none;	
+	/* display:none;	 */
+}
+.bx-default-pager{
+	display: none;
 }
 .bxslider li span{
 	position:absolute;
@@ -141,9 +144,7 @@ body{}
 	line-height:26px;
 	text-align:center;
 }
-#wrap .bx-controls{
-	display:none;	
-}
+
 #container{
 	margin-top:60px !important;
 	background-color:#fff;
@@ -525,4 +526,10 @@ body{}
 	-ms-transition:0.3s ;
 	-o-transition:0.3s ;
 	transition:0.3s ;
+}
+@media screen and (min-width: 1921px) { 
+	.main-fixed-bg03{
+		background: url(../img/sub-bg/main-fixed03.jpg) no-repeat fixed 50% -30%;
+		background-size: contain;
+	}
 }

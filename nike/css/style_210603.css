@@ -1,0 +1,495 @@
+@charset "utf-8";
+@import url(common.css);
+
+body{}
+#wrap{
+	width:100%;
+	display:block;
+	}
+#header{
+	background-color:#000000;
+	width:100%;
+	top:0;
+	overflow:hidden;
+	position:fixed;
+	z-index:1;
+	}
+#header .header-area{
+	width:1280px;
+	height:60px;	
+	margin:0 auto;
+	}
+#header .logo{
+	float:left;
+	margin-left:15px;
+	}
+#header .logo img{
+	padding-top:3px;	
+}
+#header .main-nav{
+	font-size:15px;
+	float:right;
+	margin-right:15px;
+	}
+.main-nav ul li{
+	display:inline-block;
+	line-height:62px;
+	padding-left:45px;
+	}
+.main-nav ul .nav01{
+	}	
+.main-nav ul li a{
+	color:#f9f9f9;
+	font-weight:bold;
+	position:relative;
+	}
+.main-nav ul li a:hover{
+	color:#b72a2a;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition:0.3s ;
+	transition:0.3s ;
+	}
+.bxslider{
+	position:relative;
+
+	}
+.bxslider li img{
+	width:100%;
+	height:860px;	
+	}	
+#wrap .bx-controls{
+	display:none;	
+}
+.bxslider li span{
+	position:absolute;
+	text-align:left;
+	}
+.bxslider li .slider-text01{
+	font-size:70px;
+	color:#f1f1f1;
+	font-weight:bold;
+	position:absolute;
+	top:360px;
+	left:14%;
+	}
+.bxslider li .slider-text02{
+	font-size:14px;
+	color:#555555;
+	font-weight:bold;
+	position:absolute;
+	top:480px;
+	left:14.5%;
+	line-height:26px;
+}
+.bxslider li .slider-text03{
+	font-size:70px;
+	color:#f1f1f1;
+	font-weight:bold;
+	position:absolute;
+	top:360px;
+	left:49%;
+	text-align:center;
+	}
+.bxslider li .slider-text04{
+	font-size:14px;
+	color:#555555;
+	font-weight:bold;
+	position:absolute;
+	top:480px;
+	left:49%;
+	line-height:26px;
+	text-align:center;
+}
+#wrap .bx-controls{
+	display:none;	
+}
+#container{
+	margin-top:60px;
+	background-color:#fff;
+}
+#container .nike-is{
+	background-color:#f1f1f1;
+	padding-top:190px;
+	padding-bottom:200px;
+	}
+.nikeis-area{
+	width:1250px;
+	margin:0 auto;
+}
+.fade-bottom01{
+	position:relative;
+	bottom:-100px;
+	opacity:0;
+}
+.fade-bottom02{
+	position:relative;
+	bottom:-100px;
+	opacity:0;
+}
+.fade-bottom03{
+	position:relative;
+	bottom:-100px;
+	opacity:0;
+}
+.fade-bottom04{
+	position:relative;
+	bottom:-100px;
+	opacity:0;
+}
+.fade-bottom05{
+	position:relative;
+	bottom:-100px;
+	opacity:0;
+}
+.fade-bottom06{
+	position:relative;
+	bottom:-100px;
+	opacity:0;
+}
+.fade-bottom07{
+	position:relative;
+	bottom:-100px;
+	opacity:0;
+}
+.fade-bottom08{
+	position:relative;
+	bottom:-100px;
+	opacity:0;
+}
+.fade-bottom09{
+	position:relative;
+	bottom:-100px;
+	opacity:0;
+}
+.fade-bottom10{
+	position:relative;
+	bottom:-100px;
+	opacity:0;
+}
+.fade-bottom11{
+	position:relative;
+	bottom:-100px;
+	opacity:0;
+}
+.big-nike{
+	float:left;
+}
+.sb{
+	position:relative;
+}
+.sb01-area{
+	float:right;
+	width:720px;
+}
+.sb01 {
+	float:right;
+}
+.sb01-text{
+	position:relative;
+	float:left;
+	text-align:left;
+	top:200px;
+	left:15px;
+}
+.sb01-text h3{
+	font-size:20px;
+	color:#5f5f5f;
+	font-weight:bold;
+	padding-bottom: 15px;
+}
+.sb01-text p{
+	font-size:14px;
+	color:#555555;
+	line-height: 23px;
+	font-weight:normal;
+}
+.sb02{
+	position:absolute;
+	bottom:0;
+	right:335px;
+}
+.nike-sport{
+	float:right;
+	position:relative;
+	margin-top:128px;
+}
+.sport-text{
+    position: absolute;
+    bottom: 65px;
+    left: -310px;
+    padding: 12px 145px 12px 20px;
+    text-align: left;
+    background: url(../img/nike_is/text-box01.jpg) no-repeat 0 0;
+    opacity: 0.9;
+}
+.sport-text h3{
+	font-size: 20px;
+	color: #e5e5e5;
+	font-weight: bold;
+	padding-bottom: 15px;
+}
+.sport-text p{
+	font-size: 14px;
+	color: #e5e5e5;
+	line-height: 23px;
+	font-weight:normal;
+}
+.img-fixed{
+	max-width:100%;
+	height:580px;
+	margin:0 auto;
+	background:url(../img/fixed-img/nike-world2.jpg) no-repeat 50% 50%;
+	background-attachment: fixed;
+	box-sizing:border-box;
+	background-size:cover;
+	padding:317px 0;
+}
+.img-fixed p{
+	text-indent:-9999px;
+}
+.nike-active{
+	width:100%;
+	margin-top:200px;
+	margin-bottom:200px;
+}
+.active-area{
+	width:1250px;
+	margin:0 auto;
+}
+.active01-area{
+	position:relative;
+	overflow:hidden;
+	margin-left:106px;
+}
+.active01-area .active01-img{
+	float:left;
+}
+.active01-area .active01-text{
+	position:absolute;
+	bottom:65px;
+	left:515px;
+	padding: 12px 145px 12px 20px;
+	text-align:left;
+	opacity:0.9;
+	background:url(../img/active-img/text-box02.jpg)no-repeat;
+}
+.active01-text h3{
+	font-size:20px;
+	color:#e5e5e5;
+	font-weight: bold;
+	padding-bottom: 15px;
+}
+.active01-text p{
+	font-size: 14px;
+	color: #e5e5e5;
+	line-height: 23px;	
+	font-weight:normal;
+}
+.active02{
+	display:block;
+	width:100%;
+	float:left;
+	text-align:left;
+	margin-top:100px;
+	margin-bottom:30px;
+	margin-left:40px;
+}
+.active02 h3{
+	font-size:20px;
+	color:#5f5f5f;
+	font-weight:bold;
+	padding-bottom:15px;
+}
+.active02 p{
+	font-size:14px;
+	color:#555555;
+	line-height:23px;
+	font-weight:normal;
+}
+.active03-left-area{
+	width:400px;
+	float:left;
+	margin-right:25px;
+}
+.active03-left01{
+	margin-bottom:17px;
+}
+.active03-center-area{
+	float:left;
+}
+.active03-center01{
+	margin-bottom:15px;
+}
+.active03-right-area{
+	float:right;
+}
+.active03-right01{
+	margin-bottom:15px;
+}
+.scale{
+	overflow:hidden;
+	position:relative;
+}
+.scale a{
+	display: block;
+    width: 100%;
+	height:100%;
+}
+.scale img{
+	display:block;
+	width:100%;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+.scale span::before{
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	content: "";
+	background: #000;
+	overflow: hidden;
+	opacity: 0;
+	-webkit-transition:  0.5s;
+	-moz-transition: 0.5s ;
+	-ms-transition: 0.5s ;
+	-o-transition: 0.5s ;
+	transition: 0.5s ;
+}
+.scale:hover span::before{
+	opacity:0.5;
+}
+.scale:hover img{
+	-webkit-transform: scale(1.1);
+	-moz-transform:scale(1.1) ;
+	-ms-transform:scale(1.1) ;
+	-o-transform: scale(1.1);
+	transform:scale(1.1) ;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-ms-transition:0.4s ;
+	-o-transition:0.4s ;
+	transition: 0.4s;
+}
+.nike-collabo{
+	width:100%;
+	background-color:#f9f9f9;
+}
+.collabo-area{
+	width:1250px;
+	margin:0 auto;
+	padding-top:60px;
+	padding-bottom:120px;
+}
+.collabo-area h3{
+	font-size:20px;
+	font-weight:bold;
+	color:#5f5f5f;
+	margin-bottom:80px;
+}
+.collabo-area .text-box{
+	width:400px;
+	height:300px;
+	background:url(../img/collabo-img/text-box03.jpg) no-repeat ;
+	position:relative;
+}
+.text-box h4{
+	font-size:20px;
+	color:#333333;
+	text-align:left;
+	position:absolute;
+	top:120px;
+	left:40px;
+}
+.text-box p{
+	width:300px;
+	font-size:14px;
+	color:#aaaaaa;
+	text-align:left;
+	position:absolute;
+	top:170px;
+	left:40px;
+}
+.collabo01{
+	margin-bottom:25px;
+}
+.collabo01 .collabo01-left{
+	float:left;
+}
+.collabo01 .collabo01-right{
+	float:right;
+}
+.collabo02{
+	margin-bottom:25px;
+}
+.collabo02 .collabo02-left{
+	float:left;
+}
+.collabo02 .collabo02-right{
+	float:right;
+}
+.collabo03 .collabo03-left{
+	float:left;
+}
+.collabo03 .collabo03-right{
+	float:right;
+}
+#footer{
+	background-color:#222222;
+	padding-bottom:100px;
+	overflow:hidden;
+}
+#footer .footer-area{
+	width:1250px;
+	margin:0 auto;
+
+}
+.footer-area .footer-left{
+	float:left;
+	position:relative;
+	top:50px;
+}
+.footer-area .footer-center{
+	float:left;
+	position:relative;
+	top:50px;
+	left:295px;
+}
+.footer-area .footer-right{
+	float:right;
+	position:relative;
+	top:50px;
+	right:106px;
+}
+.footer-right ul li{
+	display:inline-block;
+	padding-left:19px;
+}
+.footer-right p{
+	padding-top:15px;
+	padding-right:20px;
+}
+.footer-right p a{
+	font-size:14px;
+	color:#b7b7b7;
+}
+.footer-right p a:hover{
+	color:#b72a2a;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition:0.3s ;
+	-o-transition:0.3s ;
+	transition:0.3s ;
+}

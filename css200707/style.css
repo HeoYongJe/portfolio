@@ -1,0 +1,197 @@
+/* reset */
+body{
+    margin:0;
+    padding:0;
+}
+ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
+
+#introPage{
+    background:url(../img/mainBack16.jpg)no-repeat;
+    background-size:cover;
+}
+#itemArea{
+    background:url(../img/mainBack17.jpg)no-repeat;
+    background-size:cover;
+}
+#contactArea{
+    background:#f5f5f5;
+    /* background:url(../img/mainBack18.jpg)no-repeat; */
+    background-size:cover;
+}
+/* common */
+.section .contentSet{
+    max-width:980px;
+    width:100%;
+    margin:0 auto;
+    padding:0 30px;
+}
+.contentSet h2{
+    font-size:3em;
+    text-align:center;
+    display:none;
+    /* background: linear-gradient(to right, #99aece, #eeeeee); #0f578e */
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+.contentSet span{
+    /* background: linear-gradient(to right, #f89300, #eeeeee); #0f578e 99aece
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    text-align:center;
+    /* padding-left:23px; */
+}
+
+/* nav */
+#mainNav div ul{
+    overflow:hidden;
+    position:fixed;
+    top:0;
+    height:80px;
+    z-index: 9999;
+}
+#mainNav div ul li{
+    float: left;
+    width: 150px;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+}
+#mainNav div ul li a{
+    display:block;
+    width:100%;
+    text-decoration: none;
+    color:#0f4c8e; /*#f89300*/
+}
+#mobileBtn{
+    display:none;
+}
+
+
+/* #introPage */
+#introPage{
+    position:relative;
+    
+}
+#introPage .contentSet{
+    max-width:1280px;
+
+}
+#introPage h2{
+    font-size:6em;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    text-align:left;
+
+}
+.introDivideLayout{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.introDivideLayout img{
+    width:48%;
+
+}
+.scrollBtnContainer{
+    width:100%;
+    display:block;
+    text-align:center;
+}
+#scrollGideBtn{
+    background: none;
+    border:0;
+    position: absolute;
+    bottom:60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#scrollGideBtn img{
+    width:50px;
+}
+
+
+/* slide  */
+/* #itemArea ul{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap: wrap;
+}
+#itemArea ul li{
+    text-align:center;
+    width:31.8%;
+    margin-bottom:15px;
+    background:#fff;
+    border:1px solid #eee;
+}
+#itemArea ul li figure{
+    
+}
+#itemArea ul li a{
+    width:100%;
+    height:100%;
+    display:block;
+}
+#itemArea ul li a img{
+    width:100%;
+} */
+.slide{
+    text-align:left;
+}
+.itemContent{
+    /* position: absolute;
+    bottom: 80px; */
+    float:right;
+    margin-top: 100px;
+}
+.itemContent a{
+    border: 0;
+    background: #0f4c8e;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    text-decoration:none;
+    transition:0.4s;
+    font-size: 13px;
+    border:1px solid #0f4c8e;
+}
+.itemContent a:hover{
+    background:none;
+    color:#0f4c8e;
+    border:1px solid #0f4c8e;
+    transition:0.2s;
+}
+.slide img{
+    display:block;
+    margin:0 auto;
+    box-shadow:3px 3px 10px 2px rgba(0,0,0,0.4);
+    float:left;
+    width:60%;
+}
+/* #contactArea */
+#contactArea dl{
+    display:flex;
+    justify-content: space-between;
+    margin:15px 0;
+}
+#contactArea .contentSet{
+    width:800px;
+    margin:0 auto;
+}
+.fadeTop{
+    position: relative;
+    bottom:-50px;
+    display:none;
+}
+.fadeTopOn{
+    position: relative;
+    bottom:0px;
+    display:block;
+}
+
+
+/*
+이미지 출처 
+<a href='https://www.freepik.com/free-photos-vectors/mockup'>Mockup psd created by yeven_popov - www.freepik.com</a>
+<a href='https://www.freepik.com/free-photos-vectors/mockup'>Mockup vector created by rawpixel.com - www.freepik.com</a>
+*/

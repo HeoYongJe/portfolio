@@ -1,0 +1,40 @@
+@media screen and (max-width:1280px){
+    /* slidebutton */
+    .fp-controlArrow.fp-prev{
+        display:none;
+    }
+    .fp-controlArrow.fp-next{
+        display:none;
+    }
+};
+
+@media screen and (max-width:767px){
+/* nav */
+    #fp-nav{
+        display:none !important;
+    }
+    #mainNav div ul li{
+        width:120px;
+    }
+
+/* #introPage */
+    #introPage h2{
+        font-size:2em;
+        letter-spacing:0.1em;
+    }
+    .introDivideLayout img{
+        display:none;
+    }
+
+/* slide  */
+    .fp-tableCell{
+        width:80% !important;
+    }
+    .fp-tableCell img{
+        width:100%;
+    }
+    .fp-controlArrow.fp-next{
+        width:20px;
+        height:20px;
+    }
+};

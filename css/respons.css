@@ -2,14 +2,19 @@
     #introPage {
         background-size: cover;
     }
-
+    #subIntroPage{
+        padding: 50px 0 150px 0;
+    }
+    #subIntroPage img{
+        width:100%;
+    }
     .carousel-inner>.item>a>img,
     .carousel-inner>.item>img,
     .img-responsive,
     .thumbnail a>img,
     .thumbnail>img {
         margin: 0 auto;
-        width: 70%;
+        width: 50%;
     }
 }
 
@@ -18,7 +23,7 @@
 
 @media screen and (max-width: 1920px) {
     .carousel-inner>.item>img {
-        width:55%;
+        width:51%;
     }
 }
 
@@ -39,7 +44,8 @@
 
 @media screen and (max-width: 1280px) {
     #introPage {
-        background: url(../img/intro7.png) no-repeat 10%;
+        /* background: url(../img/intro7.png) no-repeat 10%; */
+        background:#000;
     }
 
     #subIntroPage img{
@@ -126,7 +132,7 @@
 
     #introPage {
         /* background: url(../img/intro7.png) no-repeat 15%; */
-        background: #e9e6e2;
+        background: #000;
         position: relative;
         height: 70vh;
     }
@@ -145,6 +151,10 @@
         right: 0;
         width: 100%;
 
+    }
+
+    #introPage p{
+        display:none;
     }
 
     #subIntroPage img{
@@ -215,8 +225,8 @@
         position: absolute;
         top: 0;
         right: 0;
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
         padding: 0;
         background: rgba(255, 255, 255, 0);
     }
@@ -244,7 +254,7 @@
     #mainNav div {}
 
     #mainNav div ul {
-        margin-top: 80px;
+        margin-top: 60px;
         display: none;
         height: 100vh;
         background: #f9f9f9;
